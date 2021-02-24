@@ -1,0 +1,20 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: #FF6EC7;
+  font-size: 4rem;
+  margin: 0;
+  color: white;
+  border: #FF6EC7 solid 1px;
+}
+/*# sourceMappingURL=index.css.map */
