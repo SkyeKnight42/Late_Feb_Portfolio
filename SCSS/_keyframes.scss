@@ -1,0 +1,68 @@
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes vanishBox {
+    0% {
+        opacity: 100%;
+        // height: 30px;
+    }
+    50% {
+        height: 30px;
+    }
+    100% {
+        background-color: $neon_pink;
+        opacity: 0%;
+        width: 0%;
+        height: 5px;
+        // height: 0px;
+    }
+}
+
+// Header title underlines
+// #region
+@keyframes fadeInLineOne {
+    0% {
+        opacity: 0%;
+        width: 100%
+    }
+    100% {
+        width: 80%;
+        opacity: 100%;
+    }
+}
+@keyframes fadeInLineTwo {
+    0% {
+        opacity: 0%;
+        width: 100%
+    }
+    100% {
+        width: 60%;
+        opacity: 100%;
+    }
+}
+@keyframes fadeInLineThree {
+    0% {
+        opacity: 0%;
+        width: 100%
+    }
+    100% {
+        width: 40%;
+        opacity: 100%;
+    }
+}
+// #endregion

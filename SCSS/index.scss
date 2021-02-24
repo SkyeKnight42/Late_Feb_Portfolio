@@ -1,8 +1,9 @@
 @import "_colors.scss";
+@import "_keyframes.scss";
 
 html {
     font-size: 62.5%;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 body {
@@ -12,12 +13,93 @@ body {
 }
 
 header {
-    h1 {
-        text-transform: uppercase;
-        color: $neon_pink;
-        font-size: 4rem;
-        margin: 0;
-        color: white;
-        border: $neon_pink solid 1px;
+    padding: 20px 20px 0;
+
+    [class*=header_box] {
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        h1 {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 5rem;
+            margin: 0;
+            width: auto;
+            color: white;
+        }
+        #header_surname {
+            text-align: right;
+            color: $neon_pink;
+        }
+        #header_portfolio {
+            // color: $neon_pink;
+        }
+
+        .vanish_box {
+            width: 100%;
+            height: 30px;
+            margin: 0 10px;
+            background-color: white;
+            animation-name: vanishBox;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .header_box_second {
+        justify-content: flex-end;
+    }
+
+
+    .slide_in_left {
+        animation-name: slideInFromLeft;
+        animation-duration: 1s;
+    }
+
+    .slide_in_right {
+        animation-name: slideInFromRight;
+        animation-duration: 1s;
+    }
+
+    .underlines {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+
+        span {
+            opacity: 0;
+            display: block;
+            height: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            // background-color: $neon_light_pink;
+            border-radius: 5px;
+            animation-fill-mode: forwards;
+            animation-duration: 1s;    
+        }
+
+        .line_one {
+            background-color: $underline_pink_1;
+            animation-name: fadeInLineOne;
+            width: 100%;
+            animation-delay: 1s;
+        }
+        .line_two {
+            background-color: $underline_pink_2;
+            animation-name: fadeInLineTwo;
+            width: 70%; 
+            height: 8px;
+            animation-delay: 2s;
+        }
+        .line_three {
+            background-color: $underline_pink_3;
+            animation-name: fadeInLineThree;
+            width: 40%;    
+            height: 6px;
+            animation-delay: 3s;
+        }
     }
 }
