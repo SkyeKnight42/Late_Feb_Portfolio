@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Typing Effect</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+
+        </header>
+            <p>Here is some text that will be typed out to the page on load.</p>
+            <p class="demo">&lt;p id=&quot;typing&quot;&gt;Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea.&lt;/p&gt;</p>
+            <p class="testingclassname hello goodbye" id="typing">Duis id consequat nostrud do et officia fugiat est et nostrud commodo nulla ea.</p>
+
+            <p class="demo">&lt;p&gt; onclick&equals;"TypeOutText&lpar;this, 150, 'typing', null&rpar;"CLICK ME&excl; This is some test text&lt;/p&gt;</p>
+            <p onclick="TypeOutText(this, 50, 'typing', null)">CLICK ME! This is some test text</p>
+            <p class="demo">&lt;p&gt; onclick&equals;"TypeOutText&lpar;this, 150, 'dash', '!'&rpar;"CLICK ME&excl; This is some test text&lt;/p&gt;</p>
+            <p onclick="TypeOutText(this, 50, 'dash', '!')">CLICK ME! 2 This is some test text</p>
+            <p class="demo">&lt;p&gt; onclick&equals;"TypeOutText&lpar;this, 150, 'blink', '#'&rpar;"CLICK ME&excl; This is some test text&lt;/p&gt;</p>
+            <p onclick="TypeOutText(this, 50, 'blink', '#')">CLICK ME! 3 This is some test text</p>
+
+            <br>
+            <p class="java_header">And in the javascript</p>
+            <p>let typing &equals; document.getElementById&lpar;&quot;typing&quot;&rpar;</p>
+            <p>let dash &equals; document.getElementById&lpar;&quot;dash&quot;&rpar;</p>
+            <p>let blink &equals; document.getElementById&lpar;&quot;blink&quot;&rpar;</p>
+
+            <br>
+            <p>document.addEventListener&lpar;&quot;DOMContentLoaded&quot;&comma; function&lpar;&rpar; {</p>
+
+            <p>TypeOutText&lpar;typing&comma; 50&comma; &quot;typing&quot;&comma; null&rpar;</p>
+            <p>TypeOutText&lpar;dash&comma; 100&comma; &quot;dash&quot;&comma; &quot;|&quot;&rpar;</p>
+            <p>TypeOutText&lpar;blink&comma; 150&comma; &quot;blink&quot;&comma; &quot;|&quot;&rpar;</p>
+            <p>}&rpar;</p>
+
+        <footer>
+
+        </footer>
+        <script type="text/javascript" src="typing_effect.js"></script>
+    </body>
+</html>

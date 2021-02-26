@@ -1,0 +1,365 @@
+
+
+@media (min-width: 768px) {
+    header {
+        width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .title_image_container {
+            .website_title {
+                width: 400px;
+                right: 0;
+            }
+        }
+
+        .navigation_container {
+            display: flex;
+            width: 700px;
+            flex-direction: row; 
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 0 auto 20px;
+            [class*=nav_item] {
+                width: 325px;
+                margin: 10px;
+            }
+        }
+    }
+
+    main {
+        .about_me_container {
+            width: 750px;
+
+            .about_content {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .about_me_image {
+                    width: 300px;
+                    height: 300px;
+    
+                    .image_content {
+                        img {
+                            height: 260px;
+                        }
+                    }
+                }
+    
+                .wasd {
+                    position: absolute;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 250px;
+                    margin: 0 20px;
+                    --key_size: 60px;
+                    // top: 280px;
+                    right: 100px;
+                    top: 50px;
+                    transform: rotateZ(-30deg);
+    
+                    & > * {
+                        height: var(--key_size);
+                        width: var(--key_size);
+    
+                    }
+    
+                    p {
+                        padding: 0;
+                        display: block;
+                        line-height: var(--key_size);
+                        text-align: center;
+                        text-transform: lowercase;
+                        font-family: 'Major Mono Display', sans-serif; 
+                        font-size: 3rem;
+                        font-weight: 800;
+                        color: white;
+                        border: solid 3px white;
+                        border-radius: 10px;
+                        margin: 5px;
+    
+                        &:hover {
+                            color: $neon_pink
+                        }
+                    }
+                }
+        
+                .about_me_info {
+                    width: 750px;
+
+                    .text_container {
+                        p {
+                            text-align: left;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .skill_container {
+            .skill_width_container {
+                width: 750px;
+                margin: 0 auto;
+
+                .skill_item_container {
+                    .skill_item {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        .skill_icon {
+                            --arrow_size: 30px;
+                            width: 20%;
+                            height: 20%;
+                        }
+                        .skill_title {
+                            width: 80%;
+                            text-align: center;
+                            br {
+                                display: none;
+                            }
+                        }
+                        .skill_text {
+                            display: flex;
+                            flex-direction: row;
+                            position: relative;
+                            width: 100%;
+                            margin-top: 30px;
+                            --border_offset: 50px;
+
+                            p {
+                                display: block;
+                                z-index: 5;
+                                margin: 10px;
+                                padding: 10px;
+                                background-color: black;
+                            }
+
+                            div {
+                                position: absolute;
+                                display: block;
+                            }
+                            .top_left_border {
+                                background-color: $neon_blue;
+                                top: 0;
+                                left: 0;
+                                right: var(--border_offset);
+                                bottom: var(--border_offset);
+                            }
+                            .bottom_right_border {
+                                background-color: $neon_pink;
+                                top: var(--border_offset);
+                                left: var(--border_offset);
+                                right: 0;
+                                bottom: 0;
+                            }
+                        }
+                    }
+                    .reverse {
+                        .skill_title {
+                            order: -2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 993px) {
+    header {
+        width: 975px;
+
+        .title_image_container {
+            display: flex;
+            flex-direction: row-reverse;
+            .website_title {
+                margin-top: 200px;
+                width: 400px;
+            }
+            .printing_container {
+                height: 800px;
+                width: 700px;
+                position: relative;
+
+                .printer {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    position: absolute;
+                    animation: disablePrinter 5s forwards;
+
+                    .printing_bar {
+                        display: none;
+                        z-index: 40;
+                        position: absolute;
+                        height: 10px;
+                        left: 0;
+                        right: 0;
+                        bottom: -5px;
+                        background-color: $neon_blue;
+                    }
+                    .printing_circle {
+                        z-index: 100;
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        border: solid 5px white;
+                        border-radius: 50%;
+                        bottom: -15px;
+                        animation: printSlider .5s linear infinite;
+                    }
+                }
+
+                .skye_pixel_container {
+                    height: 800px;
+                    width: 700px;
+                    overflow: hidden;
+    
+                    .skye_pixel {
+                        z-index: 45;
+                        opacity: 1;
+                        margin-top: 800px;
+                        max-height: 800px;
+                        width: 700px;
+                        overflow: hidden;
+                        animation: printSkye 5s linear forwards;
+                    } 
+                }
+            }
+        }
+
+        .underlines {
+            margin-top: 50px;
+        }
+    }
+
+    main {
+        .about_me_container {
+            width: 975px;
+
+            .about_content {
+                align-items: center;
+                justify-content: space-between;
+                .about_me_image {
+                    width: 300px;
+                    height: 300px;
+                    margin-bottom: 0;
+    
+                    .image_content {
+                        img {
+                            height: 260px;
+                        }
+                    }
+                }
+
+                .about_me_info {
+                    .text_container {
+                        width: 950px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .skill_container {
+            .skill_width_container {
+                width: 975px;
+                .skill_item_container {
+                    .skill_item {
+                        .skill_title {
+                            order: -1;
+                            width: 100%;
+                        }
+                        
+                        .skill_text {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1218px) {
+    header {
+        // height: 80vh;
+        height: 100%;
+        width: 1200px;
+        // overflow: unset;
+        position: relative;
+        .title_image_container {
+            .website_title {
+                width: 500px;
+            }
+        }
+
+        .underlines {
+            // border: solid 1px white;
+            margin-top: 50px;
+
+            .line_three {
+                margin: 0;
+            }
+        }
+
+        .navigation_container {
+            position: absolute;
+            right: 0px;
+            width: 500px;
+            top: 425px;
+            // margin-left: 0;
+        }
+        // border: solid 1px white;
+    }
+
+    body {
+        main {
+            .about_me_container {
+                width: 1200px;
+
+                .about_content {
+                    flex-wrap: nowrap;
+                    justify-content: center;
+
+                    .about_me_image {
+                        width: 300px;
+                        height: 300px;
+        
+                        .image_content {
+                            img {
+                                height: 260px;
+                            }
+                        }
+                    }
+
+                    .wasd {
+                        display: none;
+                    }
+    
+                    .about_me_info {
+                        width: 850px;
+                        .text_container {
+                            width: 850px;
+                        }
+                    }
+                }
+            }
+
+            .skill_container {
+                .skill_width_container {
+                    width: 1200px;
+                }
+            }
+        }
+    }
+}
