@@ -195,17 +195,18 @@
                     right: 0;
                     bottom: 0;
                     position: absolute;
-                    animation: disablePrinter 5s forwards;
+                    animation: disablePrinter 3s forwards;
 
                     .printing_bar {
-                        display: none;
+                        // display: none;
                         z-index: 40;
                         position: absolute;
                         height: 10px;
                         left: 0;
                         right: 0;
                         bottom: -5px;
-                        background-color: $neon_blue;
+                        // background-color: $neon_blue;
+                        background-color: black;
                     }
                     .printing_circle {
                         z-index: 100;
@@ -223,15 +224,18 @@
                     height: 800px;
                     width: 700px;
                     overflow: hidden;
+                    display: block;
+                    // opacity: 1;
     
                     .skye_pixel {
+                        display: block;
                         z-index: 45;
                         opacity: 1;
                         margin-top: 800px;
                         max-height: 800px;
                         width: 700px;
                         overflow: hidden;
-                        animation: printSkye 5s linear forwards;
+                        animation: printSkye 3s linear forwards;
                     } 
                 }
             }

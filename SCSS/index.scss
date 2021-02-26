@@ -1,5 +1,6 @@
 @import "_colors.scss";
 @import "_keyframes.scss";
+@import "Keyframes/_game_controller_svg.scss";
 
 body {
     margin: 0;
@@ -53,6 +54,7 @@ header {
         .skye_pixel_container {
             .skye_pixel {
                 opacity: 0;
+                display: none;
                 // width: auto;
             }
         }
@@ -361,6 +363,121 @@ body {
                         width: 100%;
                         font-size: 2rem;
                         padding: 0;           
+                    }
+                }
+            }
+        }
+    }
+
+    .hobbies_container {
+        width: calc(100vw - 18px);
+        margin: 0 auto;
+
+        .hobbies_width_container {
+            padding: 0 20px;
+            text-align: center;
+            --border_offset: 50px;
+
+            .hobbies_item_container {
+                .hobbie_item {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    justify-content: center;
+                    padding: 10px;
+
+                    .hobbie_icon {
+                        --icon_border_color: white;
+                        z-index: 1;
+                        background-color: black;
+                        // border: solid 5px var(--icon_border_color);
+                        padding: 20px;
+                        #game_controller {
+                            transform: translateX(-10px) rotateZ(-10deg);
+                            width: 50%;
+
+                            * {
+                                // stroke-dasharray: 100%;
+                                // stroke-dashoffset: 100%;
+                                // animation: hideOutline 1s linear forwards;
+                            }
+                            #controller_outline {
+                                stroke-dasharray: 693.532;
+                            }
+                            #cable_connector {
+                                stroke-dasharray: 99.92020416259766;
+                            }
+                            #d-pad {
+                                stroke-width: 5px;
+                                stroke-dasharray: 235;
+                            }
+                            #top_button,
+                            #left_button,
+                            #right_button,
+                            #bottom_button {
+                                stroke-width: 3px;
+                                stroke-dasharray: 62.840511322021484;
+                            }
+                            &:hover {
+                                // * {
+                                //     animation: undrawDrawOutline 1s linear forwards;
+                                // }
+                                #controller_outline {
+                                    animation: undrawDrawController 1s linear forwards;
+                                }
+                                #cable_connector {
+                                    animation: undrawDrawCableConnector 1s linear forwards;
+                                }
+                                #d-pad {
+                                    animation: undrawDrawDpad 1s linear forwards;
+                                    animation-delay: 1s;
+                                }
+                                #top_button {
+                                    animation: undrawDrawTopButton 1s linear forwards;
+                                }
+                                #left_button {
+                                    animation: undrawDrawLeftButton 1s linear forwards;
+                                }
+                                #right_button {
+                                    animation: undrawDrawRightButton 1s linear forwards;
+                                }
+                                #bottom_button {
+                                    animation: undrawDrawBottomButton 1s linear forwards;
+                                }
+                                #top_button,
+                                #left_button,
+                                #right_button,
+                                #bottom_button {
+                                    animation-delay: 1s;
+                                }
+                            }
+                        }
+                    }
+                    .hobbie_text {
+                        // display: none;
+                        z-index: 1;
+                        // position: absolute;
+                        background-color: black;
+                        padding: 0 20px;
+                        p {
+                            font-size: 2rem;
+                        }
+                    }
+                    .top_left_border {
+                        position: absolute;
+                        background-color: $neon_blue;
+                        top: 0;
+                        left: 0;
+                        right: var(--border_offset);
+                        bottom: var(--border_offset);
+                    }
+                    .bottom_right_border {
+                        position: absolute;
+                        background-color: $neon_pink;
+                        top: var(--border_offset);
+                        left: var(--border_offset);
+                        right: 0;
+                        bottom: 0;
                     }
                 }
             }

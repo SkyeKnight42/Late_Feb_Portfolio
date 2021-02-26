@@ -1,0 +1,106 @@
+
+
+@keyframes undrawDrawDpad {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 235;
+        fill: rgba(0,0,0,0);
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: rgba(180,0,0,1);
+        stroke: rgb(112, 0, 0);
+    }
+}
+
+@keyframes undrawDrawController {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 693.532;
+        fill: rgba(0,0,0,0);
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: rgba(126, 126, 126, 1);
+        stroke: rgb(56, 56, 56);
+    }
+}
+
+@keyframes undrawDrawCableConnector {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 99.92020416259766;
+        fill: rgba(0,0,0,0);
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: rgba(126, 126, 126, 1);
+        stroke: rgb(56, 56, 56);
+    }
+}
+
+@keyframes undrawDrawTopButton {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 62.840511322021484;
+        fill: rgba(0,0,0,0);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: rgb(255, 145, 0);
+        stroke: rgb(170, 96, 0);
+    }
+}
+@keyframes undrawDrawLeftButton {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 62.840511322021484;
+        fill: rgba(0,0,0,0);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: rgb(7, 11, 197);
+        stroke: rgb(0, 2, 128);
+    }
+}
+@keyframes undrawDrawRightButton {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 62.840511322021484;
+        fill: rgba(0,0,0,0);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: rgb(165, 0, 0);
+        stroke: rgb(94, 0, 0);
+    }
+}
+@keyframes undrawDrawBottomButton {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 62.840511322021484;
+        fill: rgba(0,0,0,0);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 172, 0);
+        stroke: rgb(0, 109, 0);
+    }
+}
