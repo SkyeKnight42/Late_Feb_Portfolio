@@ -1,0 +1,113 @@
+@import "../Keyframes/_popcorn_svg.scss";
+@import "./_popcorn_values.scss";
+
+#popcorn {
+    .cls-1 { 
+        // fill: #fffce3;
+        // stroke: #ffe174;
+
+        fill: black;
+        stroke: white;
+    }
+    .cls-1,
+    .cls-3,
+    .cls-5 { 
+        stroke-miterlimit: 10;
+        stroke-width: 11px;
+    } 
+    .cls-2 { // Popcorn Circles
+        // fill: #ffe89b; // original color
+        fill: none;
+    } 
+    .cls-4 { // vertical fill red
+        // fill: #e6332a;
+        fill: none;
+    }
+    .cls-5 { // Box Outline
+        fill: none;
+        stroke: white;
+    }
+
+    @each $length, $num in $popcorn_pieces {
+        #Popped_Corn_#{$num}_Path {
+            stroke-dasharray: $length;
+        }
+    }
+
+    #Box_Outline {
+        stroke: none;
+        fill: none;
+        color: none;
+    }
+    #Box_Middle_Edge_Path {
+        stroke-dasharray: 273.0808410644531;
+    }
+    #Box_Outline_Path {
+        stroke-dasharray: 1126.478759765625;
+    }
+    #Box_Line_1_Path {
+        stroke-dasharray: 283.90545654296875;
+    }
+    #Box_Line_2_Path {
+        stroke-dasharray: 290.8502502441406;
+    }
+    #Box_Line_3_Path {
+        stroke-dasharray: 288.71087646484375;
+    }
+    #Box_Line_4_Path {
+        stroke-dasharray: 281.3945007324219;
+    }   
+    #Box_Line_5_Path {
+        stroke-dasharray: 264.9005126953125;
+    }   
+    #Box_Line_6_Path {
+        stroke-dasharray: 255.42771911621094;
+    }
+    
+}
+
+#popcorn:hover {
+
+    @each $length, $num in $popcorn_pieces {
+        #Popped_Corn_#{$num}_Path {
+            animation: Popcorn#{$num} 1s linear forwards,
+             FillPopcorn 1s linear forwards;
+        }
+    }
+
+    .cls-2 {
+        animation: PopcornDetail 1s linear forwards;
+    }
+
+    #Box_Outline_Path {
+        animation: BoxOutline 1s linear forwards;
+    }
+
+    #Box_Line_1_Path {
+        animation: BoxLine1 1s linear forwards;
+    }
+    #Box_Line_2_Path {
+        animation: BoxLine2 1s linear forwards;
+    }
+    #Box_Line_3_Path {
+        animation: BoxLine4 1s linear forwards;
+    }
+    #Box_Line_4_Path {
+        animation: BoxLine4 1s linear forwards;
+    }
+    #Box_Line_5_Path {
+        animation: BoxLine5 1s linear forwards;
+    }
+    #Box_Line_6_Path {
+        animation: BoxLine6 1s linear forwards;
+    }
+    #Box_Middle_Edge_Path {
+        animation: BoxEdgeOutline 1s linear forwards;
+    }
+    #Red_Fill {
+        animation: RedFill 1s linear forwards;
+    }
+    #Box_White_Fill_Path {
+        animation: BoxWhiteFill 1s linear forwards;
+    }
+}

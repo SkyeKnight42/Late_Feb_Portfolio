@@ -330,222 +330,6 @@
   }
 }
 
-@-webkit-keyframes undrawDrawDpad {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 235;
-    fill: rgba(0, 0, 0, 0);
-    stroke: white;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #b40000;
-    stroke: #700000;
-  }
-}
-
-@keyframes undrawDrawDpad {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 235;
-    fill: rgba(0, 0, 0, 0);
-    stroke: white;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #b40000;
-    stroke: #700000;
-  }
-}
-
-@-webkit-keyframes undrawDrawController {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 693.532;
-    fill: rgba(0, 0, 0, 0);
-    stroke: white;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #7e7e7e;
-    stroke: #383838;
-  }
-}
-
-@keyframes undrawDrawController {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 693.532;
-    fill: rgba(0, 0, 0, 0);
-    stroke: white;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #7e7e7e;
-    stroke: #383838;
-  }
-}
-
-@-webkit-keyframes undrawDrawCableConnector {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 99.92020416259766;
-    fill: rgba(0, 0, 0, 0);
-    stroke: white;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #7e7e7e;
-    stroke: #383838;
-  }
-}
-
-@keyframes undrawDrawCableConnector {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 99.92020416259766;
-    fill: rgba(0, 0, 0, 0);
-    stroke: white;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #7e7e7e;
-    stroke: #383838;
-  }
-}
-
-@-webkit-keyframes undrawDrawTopButton {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 62.840511322021484;
-    fill: rgba(0, 0, 0, 0);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #ff9100;
-    stroke: #aa6000;
-  }
-}
-
-@keyframes undrawDrawTopButton {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 62.840511322021484;
-    fill: rgba(0, 0, 0, 0);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #ff9100;
-    stroke: #aa6000;
-  }
-}
-
-@-webkit-keyframes undrawDrawLeftButton {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 62.840511322021484;
-    fill: rgba(0, 0, 0, 0);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #070bc5;
-    stroke: #000280;
-  }
-}
-
-@keyframes undrawDrawLeftButton {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 62.840511322021484;
-    fill: rgba(0, 0, 0, 0);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #070bc5;
-    stroke: #000280;
-  }
-}
-
-@-webkit-keyframes undrawDrawRightButton {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 62.840511322021484;
-    fill: rgba(0, 0, 0, 0);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #a50000;
-    stroke: #5e0000;
-  }
-}
-
-@keyframes undrawDrawRightButton {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 62.840511322021484;
-    fill: rgba(0, 0, 0, 0);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #a50000;
-    stroke: #5e0000;
-  }
-}
-
-@-webkit-keyframes undrawDrawBottomButton {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 62.840511322021484;
-    fill: rgba(0, 0, 0, 0);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #00ac00;
-    stroke: #006d00;
-  }
-}
-
-@keyframes undrawDrawBottomButton {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 62.840511322021484;
-    fill: rgba(0, 0, 0, 0);
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill: #00ac00;
-    stroke: #006d00;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -1021,10 +805,233 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   padding: 20px;
 }
 
+@-webkit-keyframes undrawDrawDpad {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 235;
+    fill: rgba(0, 0, 0, 0);
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #b40000;
+    stroke: #700000;
+  }
+}
+
+@keyframes undrawDrawDpad {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 235;
+    fill: rgba(0, 0, 0, 0);
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #b40000;
+    stroke: #700000;
+  }
+}
+
+@-webkit-keyframes undrawDrawController {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 693.532;
+    fill: rgba(0, 0, 0, 0);
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #7e7e7e;
+    stroke: #383838;
+  }
+}
+
+@keyframes undrawDrawController {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 693.532;
+    fill: rgba(0, 0, 0, 0);
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #7e7e7e;
+    stroke: #383838;
+  }
+}
+
+@-webkit-keyframes undrawDrawCableConnector {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 99.92020416259766;
+    fill: rgba(0, 0, 0, 0);
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #7e7e7e;
+    stroke: #383838;
+  }
+}
+
+@keyframes undrawDrawCableConnector {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 99.92020416259766;
+    fill: rgba(0, 0, 0, 0);
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #7e7e7e;
+    stroke: #383838;
+  }
+}
+
+@-webkit-keyframes undrawDrawTopButton {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 62.840511322021484;
+    fill: rgba(0, 0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ff9100;
+    stroke: #aa6000;
+  }
+}
+
+@keyframes undrawDrawTopButton {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 62.840511322021484;
+    fill: rgba(0, 0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ff9100;
+    stroke: #aa6000;
+  }
+}
+
+@-webkit-keyframes undrawDrawLeftButton {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 62.840511322021484;
+    fill: rgba(0, 0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #070bc5;
+    stroke: #000280;
+  }
+}
+
+@keyframes undrawDrawLeftButton {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 62.840511322021484;
+    fill: rgba(0, 0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #070bc5;
+    stroke: #000280;
+  }
+}
+
+@-webkit-keyframes undrawDrawRightButton {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 62.840511322021484;
+    fill: rgba(0, 0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #a50000;
+    stroke: #5e0000;
+  }
+}
+
+@keyframes undrawDrawRightButton {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 62.840511322021484;
+    fill: rgba(0, 0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #a50000;
+    stroke: #5e0000;
+  }
+}
+
+@-webkit-keyframes undrawDrawBottomButton {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 62.840511322021484;
+    fill: rgba(0, 0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #00ac00;
+    stroke: #006d00;
+  }
+}
+
+@keyframes undrawDrawBottomButton {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 62.840511322021484;
+    fill: rgba(0, 0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #00ac00;
+    stroke: #006d00;
+  }
+}
+
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller {
   -webkit-transform: translateX(-10px) rotateZ(-10deg);
           transform: translateX(-10px) rotateZ(-10deg);
   width: 50%;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller .cls-1 {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 9px;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller #controller_outline {
@@ -1091,6 +1098,830 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #bottom_button {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+}
+
+@-webkit-keyframes Popcorn0 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 321.0369567871094;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@keyframes Popcorn0 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 321.0369567871094;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@-webkit-keyframes Popcorn1 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 250.9682159423828;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@keyframes Popcorn1 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 250.9682159423828;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@-webkit-keyframes Popcorn2 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 292.2862243652344;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@keyframes Popcorn2 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 292.2862243652344;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@-webkit-keyframes Popcorn3 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 292.3649597167969;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@keyframes Popcorn3 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 292.3649597167969;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@-webkit-keyframes Popcorn4 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 262.1327209472656;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@keyframes Popcorn4 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 262.1327209472656;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@-webkit-keyframes Popcorn5 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 262.1211853027344;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@keyframes Popcorn5 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 262.1211853027344;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@-webkit-keyframes Popcorn6 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 287.7357482910156;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@keyframes Popcorn6 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 287.7357482910156;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@-webkit-keyframes Popcorn7 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 286.8323059082031;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@keyframes Popcorn7 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 286.8323059082031;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@-webkit-keyframes Popcorn8 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 270.1053161621094;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@keyframes Popcorn8 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 270.1053161621094;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@-webkit-keyframes Popcorn9 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 270.0994567871094;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@keyframes Popcorn9 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 270.0994567871094;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ffe174;
+  }
+}
+
+@-webkit-keyframes FillPopcorn {
+  0% {
+  }
+  50% {
+    fill: black;
+  }
+  100% {
+    fill: #fffce3;
+  }
+}
+
+@keyframes FillPopcorn {
+  0% {
+  }
+  50% {
+    fill: black;
+  }
+  100% {
+    fill: #fffce3;
+  }
+}
+
+@-webkit-keyframes PopcornDetail {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    fill: #ffe89b;
+  }
+}
+
+@keyframes PopcornDetail {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    fill: #ffe89b;
+  }
+}
+
+@-webkit-keyframes BoxOutline {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 1126.478759765625;
+    stroke: white;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@keyframes BoxOutline {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 1126.478759765625;
+    stroke: white;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@-webkit-keyframes BoxEdgeOutline {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 273.0808410644531;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@keyframes BoxEdgeOutline {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 273.0808410644531;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@-webkit-keyframes BoxWhiteFill {
+  0% {
+    opacity: 0;
+    fill: black;
+  }
+  100% {
+    fill: white;
+    opacity: 1;
+  }
+}
+
+@keyframes BoxWhiteFill {
+  0% {
+    opacity: 0;
+    fill: black;
+  }
+  100% {
+    fill: white;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes BoxLine1 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 283.90545654296875;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@keyframes BoxLine1 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 283.90545654296875;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@-webkit-keyframes BoxLine2 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 290.8502502441406;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@keyframes BoxLine2 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 290.8502502441406;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@-webkit-keyframes BoxLine3 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 288.71087646484375;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@keyframes BoxLine3 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 288.71087646484375;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@-webkit-keyframes BoxLine4 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 281.3945007324219;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@keyframes BoxLine4 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 281.3945007324219;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@-webkit-keyframes BoxLine5 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 264.9005126953125;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@keyframes BoxLine5 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 264.9005126953125;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@-webkit-keyframes BoxLine6 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 255.42771911621094;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@keyframes BoxLine6 {
+  0% {
+    stroke: white;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 255.42771911621094;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #222;
+  }
+}
+
+@-webkit-keyframes RedFill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    fill: white;
+  }
+  100% {
+    opacity: 1;
+    fill: red;
+  }
+}
+
+@keyframes RedFill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    fill: white;
+  }
+  100% {
+    opacity: 1;
+    fill: red;
+  }
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn .cls-1 {
+  fill: black;
+  stroke: white;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn .cls-1,
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn .cls-3,
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn .cls-5 {
+  stroke-miterlimit: 10;
+  stroke-width: 11px;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn .cls-2 {
+  fill: none;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn .cls-4 {
+  fill: none;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn .cls-5 {
+  fill: none;
+  stroke: white;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_9_Path {
+  stroke-dasharray: 270.09946;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_8_Path {
+  stroke-dasharray: 270.10532;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_7_Path {
+  stroke-dasharray: 286.83231;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_6_Path {
+  stroke-dasharray: 287.73575;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_5_Path {
+  stroke-dasharray: 262.12119;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_4_Path {
+  stroke-dasharray: 262.13272;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_3_Path {
+  stroke-dasharray: 292.36496;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_2_Path {
+  stroke-dasharray: 292.28622;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_1_Path {
+  stroke-dasharray: 250.96822;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_0_Path {
+  stroke-dasharray: 321.03696;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Box_Outline {
+  stroke: none;
+  fill: none;
+  color: none;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Box_Middle_Edge_Path {
+  stroke-dasharray: 273.0808410644531;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Box_Outline_Path {
+  stroke-dasharray: 1126.478759765625;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Box_Line_1_Path {
+  stroke-dasharray: 283.90545654296875;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Box_Line_2_Path {
+  stroke-dasharray: 290.8502502441406;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Box_Line_3_Path {
+  stroke-dasharray: 288.71087646484375;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Box_Line_4_Path {
+  stroke-dasharray: 281.3945007324219;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Box_Line_5_Path {
+  stroke-dasharray: 264.9005126953125;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Box_Line_6_Path {
+  stroke-dasharray: 255.42771911621094;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_9_Path {
+  -webkit-animation: Popcorn9 1s linear forwards, FillPopcorn 1s linear forwards;
+          animation: Popcorn9 1s linear forwards, FillPopcorn 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_8_Path {
+  -webkit-animation: Popcorn8 1s linear forwards, FillPopcorn 1s linear forwards;
+          animation: Popcorn8 1s linear forwards, FillPopcorn 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_7_Path {
+  -webkit-animation: Popcorn7 1s linear forwards, FillPopcorn 1s linear forwards;
+          animation: Popcorn7 1s linear forwards, FillPopcorn 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_6_Path {
+  -webkit-animation: Popcorn6 1s linear forwards, FillPopcorn 1s linear forwards;
+          animation: Popcorn6 1s linear forwards, FillPopcorn 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_5_Path {
+  -webkit-animation: Popcorn5 1s linear forwards, FillPopcorn 1s linear forwards;
+          animation: Popcorn5 1s linear forwards, FillPopcorn 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_4_Path {
+  -webkit-animation: Popcorn4 1s linear forwards, FillPopcorn 1s linear forwards;
+          animation: Popcorn4 1s linear forwards, FillPopcorn 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_3_Path {
+  -webkit-animation: Popcorn3 1s linear forwards, FillPopcorn 1s linear forwards;
+          animation: Popcorn3 1s linear forwards, FillPopcorn 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_2_Path {
+  -webkit-animation: Popcorn2 1s linear forwards, FillPopcorn 1s linear forwards;
+          animation: Popcorn2 1s linear forwards, FillPopcorn 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_1_Path {
+  -webkit-animation: Popcorn1 1s linear forwards, FillPopcorn 1s linear forwards;
+          animation: Popcorn1 1s linear forwards, FillPopcorn 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_0_Path {
+  -webkit-animation: Popcorn0 1s linear forwards, FillPopcorn 1s linear forwards;
+          animation: Popcorn0 1s linear forwards, FillPopcorn 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover .cls-2 {
+  -webkit-animation: PopcornDetail 1s linear forwards;
+          animation: PopcornDetail 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Outline_Path {
+  -webkit-animation: BoxOutline 1s linear forwards;
+          animation: BoxOutline 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_1_Path {
+  -webkit-animation: BoxLine1 1s linear forwards;
+          animation: BoxLine1 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_2_Path {
+  -webkit-animation: BoxLine2 1s linear forwards;
+          animation: BoxLine2 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_3_Path {
+  -webkit-animation: BoxLine4 1s linear forwards;
+          animation: BoxLine4 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_4_Path {
+  -webkit-animation: BoxLine4 1s linear forwards;
+          animation: BoxLine4 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_5_Path {
+  -webkit-animation: BoxLine5 1s linear forwards;
+          animation: BoxLine5 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_6_Path {
+  -webkit-animation: BoxLine6 1s linear forwards;
+          animation: BoxLine6 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Middle_Edge_Path {
+  -webkit-animation: BoxEdgeOutline 1s linear forwards;
+          animation: BoxEdgeOutline 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Red_Fill {
+  -webkit-animation: RedFill 1s linear forwards;
+          animation: RedFill 1s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_White_Fill_Path {
+  -webkit-animation: BoxWhiteFill 1s linear forwards;
+          animation: BoxWhiteFill 1s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {

@@ -1,0 +1,62 @@
+@import "../Keyframes/_game_controller_svg.scss";
+
+#game_controller {
+
+    .cls-1{
+        fill:none;
+        stroke:white;
+        stroke-miterlimit:10;
+        stroke-width:9px;
+    }
+
+    transform: translateX(-10px) rotateZ(-10deg);
+    width: 50%;
+    
+    #controller_outline {
+        stroke-dasharray: 693.532;
+    }
+    #cable_connector {
+        stroke-dasharray: 99.92020416259766;
+    }
+    #d-pad {
+        stroke-width: 5px;
+        stroke-dasharray: 235;
+    }
+    #top_button,
+    #left_button,
+    #right_button,
+    #bottom_button {
+        stroke-width: 3px;
+        stroke-dasharray: 62.840511322021484;
+    }
+    &:hover {
+        #controller_outline {
+            animation: undrawDrawController 1s linear forwards;
+        }
+        #cable_connector {
+            animation: undrawDrawCableConnector 1s linear forwards;
+        }
+        #d-pad {
+            animation: undrawDrawDpad 1s linear forwards;
+            animation-delay: 1s;
+        }
+        #top_button {
+            animation: undrawDrawTopButton 1s linear forwards;
+        }
+        #left_button {
+            animation: undrawDrawLeftButton 1s linear forwards;
+        }
+        #right_button {
+            animation: undrawDrawRightButton 1s linear forwards;
+        }
+        #bottom_button {
+            animation: undrawDrawBottomButton 1s linear forwards;
+        }
+        #top_button,
+        #left_button,
+        #right_button,
+        #bottom_button {
+            animation-delay: 1s;
+        }
+    }
+}

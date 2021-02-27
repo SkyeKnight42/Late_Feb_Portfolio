@@ -1,0 +1,311 @@
+
+
+@keyframes Popcorn0 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 321.0369567871094;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #ffe174;
+    }
+}
+
+@keyframes Popcorn1 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 250.9682159423828;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #ffe174;
+    }
+}
+
+@keyframes Popcorn2 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 292.2862243652344;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #ffe174;
+    }
+}
+
+@keyframes Popcorn3 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 292.3649597167969;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #ffe174;
+    }
+}
+
+@keyframes Popcorn4 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 262.1327209472656;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #ffe174;
+    }
+}
+
+@keyframes Popcorn5 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 262.1211853027344;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #ffe174;
+    }
+}
+
+@keyframes Popcorn6 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 287.7357482910156;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #ffe174;
+    }
+}
+
+@keyframes Popcorn7 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 286.8323059082031;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #ffe174;
+    }
+}
+
+@keyframes Popcorn8 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 270.1053161621094;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #ffe174;
+    }
+}
+
+@keyframes Popcorn9 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 270.0994567871094;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #ffe174;
+    }
+}
+
+@keyframes FillPopcorn {
+    0% {
+     
+    }
+    50% {
+        fill: black;
+    }
+    100% {
+        fill: #fffce3;
+    }
+}
+
+@keyframes PopcornDetail {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        fill: #ffe89b;
+    }
+}
+
+@keyframes BoxOutline {
+    0% {
+        stroke-dashoffset: 0;
+    } 
+    50% {
+        stroke-dashoffset: 1126.478759765625;
+        stroke: white;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #222;
+        // fill: white;
+    }
+}
+
+@keyframes BoxEdgeOutline {
+    0% {
+        stroke: white;
+        stroke-dashoffset: 0;
+    } 
+    50% {
+        stroke-dashoffset: 273.0808410644531;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #222;
+    }
+}
+
+@keyframes BoxWhiteFill {
+    0% {
+        opacity: 0;
+        fill: black;
+    }
+    100% {
+        fill: white;
+        opacity: 1;
+    }
+}
+
+@keyframes BoxLine1 {
+    0% {
+        stroke: white;
+        stroke-dashoffset: 0;
+    } 
+    50% {
+        stroke-dashoffset: 283.90545654296875;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #222;
+    }
+}
+
+@keyframes BoxLine2 {
+    0% {
+        stroke: white;
+        stroke-dashoffset: 0;
+    } 
+    50% {
+        stroke-dashoffset: 290.8502502441406;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #222;
+    }
+}
+
+@keyframes BoxLine3 {
+    0% {
+        stroke: white;
+        stroke-dashoffset: 0;
+    } 
+    50% {
+        stroke-dashoffset: 288.71087646484375;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #222;
+    }
+}
+
+@keyframes BoxLine4 {
+    0% {
+        stroke: white;
+        stroke-dashoffset: 0;
+    } 
+    50% {
+        stroke-dashoffset: 281.3945007324219;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #222;
+    }
+}
+
+@keyframes BoxLine5 {
+    0% {
+        stroke: white;
+        stroke-dashoffset: 0;
+    } 
+    50% {
+        stroke-dashoffset: 264.9005126953125;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #222;
+    }
+}
+
+@keyframes BoxLine6 {
+    0% {
+        stroke: white;
+        stroke-dashoffset: 0;
+    } 
+    50% {
+        stroke-dashoffset: 255.42771911621094;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #222;
+    }
+}
+
+@keyframes RedFill {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        fill: white;
+    }
+    100% {
+        opacity: 1;
+        fill: red;
+    }
+}
