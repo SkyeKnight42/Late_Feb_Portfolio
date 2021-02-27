@@ -1,7 +1,11 @@
 
+/* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
 
-@keyframes Popcorn0 {
+//#region Popcorn
+@keyframes PopcornForm0 {
     0% {
+        opacity: 1;
         stroke-dashoffset: 0;
     }
     50% {
@@ -11,12 +15,15 @@
     100% {
         stroke-dashoffset: 0;
         stroke: #ffe174;
+        opacity: 1;
+
     }
 }
 
-@keyframes Popcorn1 {
+@keyframes PopcornForm1 {
     0% {
         stroke-dashoffset: 0;
+        opacity: 1;
     }
     50% {
         stroke-dashoffset: 250.9682159423828;
@@ -25,12 +32,14 @@
     100% {
         stroke-dashoffset: 0;
         stroke: #ffe174;
+        opacity: 1;
     }
 }
 
-@keyframes Popcorn2 {
+@keyframes PopcornForm2 {
     0% {
         stroke-dashoffset: 0;
+        opacity: 1;
     }
     50% {
         stroke-dashoffset: 292.2862243652344;
@@ -39,12 +48,14 @@
     100% {
         stroke-dashoffset: 0;
         stroke: #ffe174;
+        opacity: 1;
     }
 }
 
-@keyframes Popcorn3 {
+@keyframes PopcornForm3 {
     0% {
         stroke-dashoffset: 0;
+        opacity: 1;
     }
     50% {
         stroke-dashoffset: 292.3649597167969;
@@ -53,12 +64,14 @@
     100% {
         stroke-dashoffset: 0;
         stroke: #ffe174;
+        opacity: 1;
     }
 }
 
-@keyframes Popcorn4 {
+@keyframes PopcornForm4 {
     0% {
         stroke-dashoffset: 0;
+        opacity: 1;
     }
     50% {
         stroke-dashoffset: 262.1327209472656;
@@ -67,12 +80,14 @@
     100% {
         stroke-dashoffset: 0;
         stroke: #ffe174;
+        opacity: 1;
     }
 }
 
-@keyframes Popcorn5 {
+@keyframes PopcornForm5 {
     0% {
         stroke-dashoffset: 0;
+        opacity: 1;
     }
     50% {
         stroke-dashoffset: 262.1211853027344;
@@ -81,12 +96,14 @@
     100% {
         stroke-dashoffset: 0;
         stroke: #ffe174;
+        opacity: 1;
     }
 }
 
-@keyframes Popcorn6 {
+@keyframes PopcornForm6 {
     0% {
         stroke-dashoffset: 0;
+        opacity: 1;
     }
     50% {
         stroke-dashoffset: 287.7357482910156;
@@ -95,12 +112,14 @@
     100% {
         stroke-dashoffset: 0;
         stroke: #ffe174;
+        opacity: 1;
     }
 }
 
-@keyframes Popcorn7 {
+@keyframes PopcornForm7 {
     0% {
         stroke-dashoffset: 0;
+        opacity: 1;
     }
     50% {
         stroke-dashoffset: 286.8323059082031;
@@ -109,12 +128,14 @@
     100% {
         stroke-dashoffset: 0;
         stroke: #ffe174;
+        opacity: 1;
     }
 }
 
-@keyframes Popcorn8 {
+@keyframes PopcornForm8 {
     0% {
         stroke-dashoffset: 0;
+        opacity: 1;
     }
     50% {
         stroke-dashoffset: 270.1053161621094;
@@ -123,12 +144,14 @@
     100% {
         stroke-dashoffset: 0;
         stroke: #ffe174;
+        opacity: 1;
     }
 }
 
-@keyframes Popcorn9 {
+@keyframes PopcornForm9 {
     0% {
         stroke-dashoffset: 0;
+        opacity: 1;
     }
     50% {
         stroke-dashoffset: 270.0994567871094;
@@ -137,24 +160,28 @@
     100% {
         stroke-dashoffset: 0;
         stroke: #ffe174;
+        opacity: 1;
     }
 }
+//#endregion
 
 @keyframes FillPopcorn {
     0% {
-     
+        // opacity: 1;
     }
     50% {
         fill: black;
     }
     100% {
         fill: #fffce3;
+        // opacity: 1;
+
     }
 }
 
 @keyframes PopcornDetail {
     0% {
-        opacity: 1;
+        // opacity: 1;
     }
     50% {
         opacity: 0;
@@ -162,6 +189,96 @@
     100% {
         opacity: 1;
         fill: #ffe89b;
+    }
+}
+
+@keyframes PopcornFall0 {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes PopcornFall1 {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes PopcornFall2 {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes PopcornFall3 {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes PopcornFall4 {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes PopcornFall5 {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes PopcornFall6 {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes PopcornFall7 {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes PopcornFall8 {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes PopcornFall9 {
+    0% {
+        transform: translateY(-150px)
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -198,12 +315,10 @@
 
 @keyframes BoxWhiteFill {
     0% {
-        opacity: 0;
         fill: black;
     }
     100% {
         fill: white;
-        opacity: 1;
     }
 }
 
@@ -307,5 +422,20 @@
     100% {
         opacity: 1;
         fill: red;
+    }
+}
+
+@keyframes SVGContainerHeight {
+    0% {
+        padding-top: 0px;
+    }
+    20% {
+        padding-top: 200px;
+    }
+    80% {
+        padding-top: 200px;
+    }
+    100% {
+        padding-top: 0px;
     }
 }

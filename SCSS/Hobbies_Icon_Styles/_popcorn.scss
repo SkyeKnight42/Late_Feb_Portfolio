@@ -2,6 +2,10 @@
 @import "./_popcorn_values.scss";
 
 #popcorn {
+
+    // margin-top: 200px;
+    width: 50%;
+    
     .cls-1 { 
         // fill: #fffce3;
         // stroke: #ffe174;
@@ -68,15 +72,32 @@
 
 #popcorn:hover {
 
-    @each $length, $num in $popcorn_pieces {
+    // 0.8seconds - 3.2seconds to draw and drop the popcorn pieces
+    overflow: visible;
+    animation: SVGContainerHeight 4s linear forwards;
+
+    @each 
+    $length, 
+    $num,
+    $form_time, 
+    $form_delay, 
+    $fall_speed, 
+    $fall_delay in $popcorn_pieces {
         #Popped_Corn_#{$num}_Path {
-            animation: Popcorn#{$num} 1s linear forwards,
-             FillPopcorn 1s linear forwards;
+            // display: none;
+            opacity: 0;
+            transform: translateY(-150px);
+            animation: #{$form_time}s PopcornForm#{$num} #{$form_delay}s linear forwards,
+             0.5s FillPopcorn 0.8s linear forwards,
+             #{$fall_speed}s PopcornFall#{$num} #{$fall_delay}s linear forwards;
         }
     }
 
     .cls-2 {
+        // opacity: 0;
+        // display: none;
         animation: PopcornDetail 1s linear forwards;
+        animation-delay: 3s;
     }
 
     #Box_Outline_Path {

@@ -803,6 +803,8 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   z-index: 1;
   background-color: black;
   padding: 20px;
+  /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
 }
 
 @-webkit-keyframes undrawDrawDpad {
@@ -1100,8 +1102,9 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
           animation-delay: 1s;
 }
 
-@-webkit-keyframes Popcorn0 {
+@-webkit-keyframes PopcornForm0 {
   0% {
+    opacity: 1;
     stroke-dashoffset: 0;
   }
   50% {
@@ -1111,11 +1114,13 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@keyframes Popcorn0 {
+@keyframes PopcornForm0 {
   0% {
+    opacity: 1;
     stroke-dashoffset: 0;
   }
   50% {
@@ -1125,12 +1130,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes Popcorn1 {
+@-webkit-keyframes PopcornForm1 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 250.9682159423828;
@@ -1139,12 +1146,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@keyframes Popcorn1 {
+@keyframes PopcornForm1 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 250.9682159423828;
@@ -1153,12 +1162,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes Popcorn2 {
+@-webkit-keyframes PopcornForm2 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 292.2862243652344;
@@ -1167,12 +1178,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@keyframes Popcorn2 {
+@keyframes PopcornForm2 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 292.2862243652344;
@@ -1181,12 +1194,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes Popcorn3 {
+@-webkit-keyframes PopcornForm3 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 292.3649597167969;
@@ -1195,12 +1210,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@keyframes Popcorn3 {
+@keyframes PopcornForm3 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 292.3649597167969;
@@ -1209,12 +1226,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes Popcorn4 {
+@-webkit-keyframes PopcornForm4 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 262.1327209472656;
@@ -1223,12 +1242,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@keyframes Popcorn4 {
+@keyframes PopcornForm4 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 262.1327209472656;
@@ -1237,12 +1258,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes Popcorn5 {
+@-webkit-keyframes PopcornForm5 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 262.1211853027344;
@@ -1251,12 +1274,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@keyframes Popcorn5 {
+@keyframes PopcornForm5 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 262.1211853027344;
@@ -1265,12 +1290,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes Popcorn6 {
+@-webkit-keyframes PopcornForm6 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 287.7357482910156;
@@ -1279,12 +1306,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@keyframes Popcorn6 {
+@keyframes PopcornForm6 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 287.7357482910156;
@@ -1293,12 +1322,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes Popcorn7 {
+@-webkit-keyframes PopcornForm7 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 286.8323059082031;
@@ -1307,12 +1338,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@keyframes Popcorn7 {
+@keyframes PopcornForm7 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 286.8323059082031;
@@ -1321,12 +1354,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes Popcorn8 {
+@-webkit-keyframes PopcornForm8 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 270.1053161621094;
@@ -1335,12 +1370,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@keyframes Popcorn8 {
+@keyframes PopcornForm8 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 270.1053161621094;
@@ -1349,12 +1386,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes Popcorn9 {
+@-webkit-keyframes PopcornForm9 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 270.0994567871094;
@@ -1363,12 +1402,14 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
-@keyframes Popcorn9 {
+@keyframes PopcornForm9 {
   0% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
   50% {
     stroke-dashoffset: 270.0994567871094;
@@ -1377,6 +1418,7 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     stroke-dashoffset: 0;
     stroke: #ffe174;
+    opacity: 1;
   }
 }
 
@@ -1404,7 +1446,6 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 
 @-webkit-keyframes PopcornDetail {
   0% {
-    opacity: 1;
   }
   50% {
     opacity: 0;
@@ -1417,7 +1458,6 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 
 @keyframes PopcornDetail {
   0% {
-    opacity: 1;
   }
   50% {
     opacity: 0;
@@ -1425,6 +1465,226 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   100% {
     opacity: 1;
     fill: #ffe89b;
+  }
+}
+
+@-webkit-keyframes PopcornFall0 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes PopcornFall0 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes PopcornFall1 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes PopcornFall1 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes PopcornFall2 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes PopcornFall2 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes PopcornFall3 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes PopcornFall3 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes PopcornFall4 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes PopcornFall4 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes PopcornFall5 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes PopcornFall5 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes PopcornFall6 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes PopcornFall6 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes PopcornFall7 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes PopcornFall7 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes PopcornFall8 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes PopcornFall8 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes PopcornFall9 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes PopcornFall9 {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1490,23 +1750,19 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 
 @-webkit-keyframes BoxWhiteFill {
   0% {
-    opacity: 0;
     fill: black;
   }
   100% {
     fill: white;
-    opacity: 1;
   }
 }
 
 @keyframes BoxWhiteFill {
   0% {
-    opacity: 0;
     fill: black;
   }
   100% {
     fill: white;
-    opacity: 1;
   }
 }
 
@@ -1716,6 +1972,40 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   }
 }
 
+@-webkit-keyframes SVGContainerHeight {
+  0% {
+    padding-top: 0px;
+  }
+  20% {
+    padding-top: 200px;
+  }
+  80% {
+    padding-top: 200px;
+  }
+  100% {
+    padding-top: 0px;
+  }
+}
+
+@keyframes SVGContainerHeight {
+  0% {
+    padding-top: 0px;
+  }
+  20% {
+    padding-top: 200px;
+  }
+  80% {
+    padding-top: 200px;
+  }
+  100% {
+    padding-top: 0px;
+  }
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn {
+  width: 50%;
+}
+
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn .cls-1 {
   fill: black;
   stroke: white;
@@ -1741,44 +2031,44 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   stroke: white;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_9_Path {
-  stroke-dasharray: 270.09946;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_8_Path {
-  stroke-dasharray: 270.10532;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_7_Path {
-  stroke-dasharray: 286.83231;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_6_Path {
-  stroke-dasharray: 287.73575;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_5_Path {
-  stroke-dasharray: 262.12119;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_4_Path {
-  stroke-dasharray: 262.13272;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_3_Path {
-  stroke-dasharray: 292.36496;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_2_Path {
-  stroke-dasharray: 292.28622;
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_0_Path {
+  stroke-dasharray: 321.03696;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_1_Path {
   stroke-dasharray: 250.96822;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_0_Path {
-  stroke-dasharray: 321.03696;
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_2_Path {
+  stroke-dasharray: 292.28622;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_3_Path {
+  stroke-dasharray: 292.36496;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_4_Path {
+  stroke-dasharray: 262.13272;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_5_Path {
+  stroke-dasharray: 262.12119;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_6_Path {
+  stroke-dasharray: 287.73575;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_7_Path {
+  stroke-dasharray: 286.83231;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_8_Path {
+  stroke-dasharray: 270.10532;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Popped_Corn_9_Path {
+  stroke-dasharray: 270.09946;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn #Box_Outline {
@@ -1819,59 +2109,97 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   stroke-dasharray: 255.42771911621094;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_9_Path {
-  -webkit-animation: Popcorn9 1s linear forwards, FillPopcorn 1s linear forwards;
-          animation: Popcorn9 1s linear forwards, FillPopcorn 1s linear forwards;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_8_Path {
-  -webkit-animation: Popcorn8 1s linear forwards, FillPopcorn 1s linear forwards;
-          animation: Popcorn8 1s linear forwards, FillPopcorn 1s linear forwards;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_7_Path {
-  -webkit-animation: Popcorn7 1s linear forwards, FillPopcorn 1s linear forwards;
-          animation: Popcorn7 1s linear forwards, FillPopcorn 1s linear forwards;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_6_Path {
-  -webkit-animation: Popcorn6 1s linear forwards, FillPopcorn 1s linear forwards;
-          animation: Popcorn6 1s linear forwards, FillPopcorn 1s linear forwards;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_5_Path {
-  -webkit-animation: Popcorn5 1s linear forwards, FillPopcorn 1s linear forwards;
-          animation: Popcorn5 1s linear forwards, FillPopcorn 1s linear forwards;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_4_Path {
-  -webkit-animation: Popcorn4 1s linear forwards, FillPopcorn 1s linear forwards;
-          animation: Popcorn4 1s linear forwards, FillPopcorn 1s linear forwards;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_3_Path {
-  -webkit-animation: Popcorn3 1s linear forwards, FillPopcorn 1s linear forwards;
-          animation: Popcorn3 1s linear forwards, FillPopcorn 1s linear forwards;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_2_Path {
-  -webkit-animation: Popcorn2 1s linear forwards, FillPopcorn 1s linear forwards;
-          animation: Popcorn2 1s linear forwards, FillPopcorn 1s linear forwards;
-}
-
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_1_Path {
-  -webkit-animation: Popcorn1 1s linear forwards, FillPopcorn 1s linear forwards;
-          animation: Popcorn1 1s linear forwards, FillPopcorn 1s linear forwards;
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover {
+  overflow: visible;
+  -webkit-animation: SVGContainerHeight 4s linear forwards;
+          animation: SVGContainerHeight 4s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_0_Path {
-  -webkit-animation: Popcorn0 1s linear forwards, FillPopcorn 1s linear forwards;
-          animation: Popcorn0 1s linear forwards, FillPopcorn 1s linear forwards;
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-animation: 0.7s PopcornForm0 0.8s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall0 1.7s linear forwards;
+          animation: 0.7s PopcornForm0 0.8s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall0 1.7s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_1_Path {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-animation: 0.7s PopcornForm1 0.84s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall1 1.54s linear forwards;
+          animation: 0.7s PopcornForm1 0.84s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall1 1.54s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_2_Path {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-animation: 0.7s PopcornForm2 0.88s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall2 1.58s linear forwards;
+          animation: 0.7s PopcornForm2 0.88s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall2 1.58s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_3_Path {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-animation: 0.7s PopcornForm3 0.92s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall3 1.62s linear forwards;
+          animation: 0.7s PopcornForm3 0.92s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall3 1.62s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_4_Path {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-animation: 0.7s PopcornForm4 0.96s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall4 1.66s linear forwards;
+          animation: 0.7s PopcornForm4 0.96s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall4 1.66s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_5_Path {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-animation: 0.7s PopcornForm5 1s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall5 1.7s linear forwards;
+          animation: 0.7s PopcornForm5 1s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall5 1.7s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_6_Path {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-animation: 0.7s PopcornForm6 1.04s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall6 1.74s linear forwards;
+          animation: 0.7s PopcornForm6 1.04s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall6 1.74s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_7_Path {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-animation: 0.7s PopcornForm7 1.08s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall7 1.78s linear forwards;
+          animation: 0.7s PopcornForm7 1.08s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall7 1.78s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_8_Path {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-animation: 0.7s PopcornForm8 1.12s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall8 1.82s linear forwards;
+          animation: 0.7s PopcornForm8 1.12s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall8 1.82s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_9_Path {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-animation: 0.7s PopcornForm9 1.16s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall9 1.86s linear forwards;
+          animation: 0.7s PopcornForm9 1.16s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall9 1.86s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover .cls-2 {
   -webkit-animation: PopcornDetail 1s linear forwards;
           animation: PopcornDetail 1s linear forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Outline_Path {
