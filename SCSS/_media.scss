@@ -30,14 +30,14 @@
     main {
         .about_me_container {
             width: 750px;
-
+    
             .about_content {
                 position: relative;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 flex-wrap: wrap;
-
+    
                 .about_me_image {
                     width: 300px;
                     height: 300px;
@@ -89,7 +89,7 @@
         
                 .about_me_info {
                     width: 750px;
-
+    
                     .text_container {
                         p {
                             text-align: left;
@@ -99,12 +99,12 @@
                 }
             }
         }
-
+    
         .skill_container {
             .skill_width_container {
                 width: 750px;
                 margin: 0 auto;
-
+    
                 .skill_item_container {
                     .skill_item {
                         display: flex;
@@ -112,7 +112,7 @@
                         justify-content: space-between;
                         align-items: center;
                         flex-wrap: wrap;
-
+    
                         .skill_icon {
                             --arrow_size: 30px;
                             width: 20%;
@@ -132,7 +132,7 @@
                             width: 100%;
                             margin-top: 30px;
                             --border_offset: 50px;
-
+    
                             p {
                                 display: block;
                                 z-index: 5;
@@ -140,7 +140,7 @@
                                 padding: 10px;
                                 background-color: black;
                             }
-
+    
                             div {
                                 position: absolute;
                                 display: block;
@@ -169,8 +169,117 @@
                 }
             }
         }
+    
+        .projects_container {
+            .projects_width_container {
+                width: 750px;
+                margin: 0 auto;
+    
+                .projects_item_container {
+                    .typing_effect_project {
+                        .project_visual {
+                            display: flex;
+                            flex-direction: column;
+                            .mobile_typing,
+                            .normal_demo {
+                                display: block;
+                            }
+    
+                            #demo_button {
+                                margin: 0 auto;
+                                display: inline-block;
+                                width: 20vw;
+                                border-radius: 10px;
+                                padding: 10px 20px;
+                                background-color: $neon_blue;
+                                color: black;
+                                border: solid 3px white;
+    
+                                &:hover {
+                                    color: white;
+                                    background-color: rgb(31, 181, 192);
+                                }
+                            }
+                        }
+                    }
+    
+                    .maze_project {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+    
+                        .project_title {
+                            width: 100%;
+                        }
+                        .project_visual {
+                            width: 50%;
+                            background: black;
+    
+                            img {
+                                width: 300px;
+                                height: auto;
+                            }
+                        }
+                        .project_annotation {
+                            display: flex;
+                            align-items: center;
+                            width: 50%;
+                        }
+                        .project_link {
+                            padding-top: 20px;
+                            width: 100%;
+                        }
+                    }
+    
+                    .php_project {
+    
+                        .project_visual {
+                            .image_container {
+                                width: 100%;
+                                height: 50vh;
+                                margin: 0 50px;
+                                #mobile_view {
+                                    display: none;
+                                }
+                                #small_view {
+                                    display: block;
+                                }
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .hobbies_container {
+            .hobbies_width_container {
+                width: 750px;
+                margin: 0 auto;
+    
+                .hobbies_item_container {
+                    .hobbie_item {
+                        flex-direction: row;
+    
+                        .hobbie_icon {
+                            width: 40%;
+                            // border: solid 1px white;
+                        }
+    
+                        .hobbie_text {
+                            display: flex;
+                            align-items: center;
+                            width: 60%;
+                        }
+                    }
+                }
+    
+            }
+        }
     }
-
 }
 
 @media (min-width: 993px) {
@@ -227,15 +336,56 @@
                     display: block;
                     // opacity: 1;
     
-                    .skye_pixel {
+                    .skye_pixel_group {
+                        position: relative;
+                        // border: solid 1px red;
+                        height: 800px;
+                        img {
+                            position: absolute;
+                            top: 0;
+                            // left: 0;
+                            max-height: 800px;
+                            width: 700px;
+                            // z-index: 100;
+                            opacity: 0;
+                        }
                         display: block;
                         z-index: 45;
                         opacity: 1;
                         margin-top: 800px;
-                        max-height: 800px;
-                        width: 700px;
                         overflow: hidden;
                         animation: printSkye 3s linear forwards;
+
+                        @import "./Skye_Image/_shadow_keyframes.scss";
+
+                        .skye_pixel {
+                            opacity: 0.5;
+                        }
+                        .skye_red {
+                            opacity: 0.5;
+                            z-index: 100;
+                            animation: 6s SkyeRedAnimation linear infinite;
+                        }
+                        .skye_blue {
+                            // opacity: 0.5;
+                            z-index: 99;
+                            animation: 5s SkyeBlueAnimation linear infinite;
+
+                        }
+                        .skye_magenta {
+                            // opacity: 0.5;
+                            animation: 3s SkyeMagentaAnimation linear infinite;
+                        }
+                        .skye_light_tones {
+                            // opacity: 0.8;
+                            animation: 20s SkyeLightAnimation linear infinite;
+                        }
+                        .skye_midtones {
+                            // opacity: 0.5;
+                        }
+                        .skye_shadows {
+                            // opacity: 0.5;
+                        }
                     } 
                 }
             }
@@ -291,6 +441,49 @@
                 }
             }
         }
+
+        .projects_container {
+            .projects_width_container {
+                width: 975px;
+
+                .projects_item_container {
+
+                    .php_project {
+
+                        .project_visual {
+                            .image_container {
+                                width: 100%;
+                                height: 50vh;
+                                #small_view {
+                                    display: none;
+                                }
+                                #medium_view {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .hobbies_container {
+            .hobbies_width_container {
+                width: 975px;
+
+                .hobbies_item_container {
+                    .hobbie_item {
+                        .hobbie_icon {
+                            width: 30%;
+                        }
+
+                        .hobbie_text {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -326,44 +519,84 @@
         // border: solid 1px white;
     }
 
-    body {
-        main {
-            .about_me_container {
-                width: 1200px;
+    main {
+        .about_me_container {
+            width: 1200px;
 
-                .about_content {
-                    flex-wrap: nowrap;
-                    justify-content: center;
+            .about_content {
+                flex-wrap: nowrap;
+                justify-content: center;
 
-                    .about_me_image {
-                        width: 300px;
-                        height: 300px;
-        
-                        .image_content {
-                            img {
-                                height: 260px;
-                            }
+                .about_me_image {
+                    width: 300px;
+                    height: 300px;
+    
+                    .image_content {
+                        img {
+                            height: 260px;
                         }
                     }
+                }
 
-                    .wasd {
-                        display: none;
-                    }
-    
-                    .about_me_info {
+                .wasd {
+                    display: none;
+                }
+
+                .about_me_info {
+                    width: 850px;
+                    .text_container {
                         width: 850px;
-                        .text_container {
-                            width: 850px;
+                    }
+                }
+            }
+        }
+
+        .skill_container {
+            .skill_width_container {
+                width: 1200px;
+            }
+        }
+
+        .projects_container {
+            .projects_width_container {
+                width: 1200px;
+
+                .projects_item_container {
+
+                    .php_project {
+
+                        .project_visual {
+                            .image_container {
+                                #medium {
+                                    display: none;
+                                }
+                                #desktop_view {
+                                    display: block;
+                                }
+                            }
                         }
                     }
                 }
             }
+        }
 
-            .skill_container {
-                .skill_width_container {
-                    width: 1200px;
+        .hobbies_container {
+            .hobbies_width_container {
+                width: 1200px;
+
+                .hobbies_item_container {
+                    .hobbie_item {
+                        .hobbie_icon {
+                            width: 20%;
+                        }
+
+                        .hobbie_text {
+                            width: 80%;
+                        }
+                    }
                 }
             }
         }
     }
+    
 }

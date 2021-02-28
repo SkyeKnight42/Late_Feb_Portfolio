@@ -391,8 +391,8 @@ header .title_image_container .header_box #header_surname {
           animation-fill-mode: forwards;
 }
 
-header .title_image_container .skye_pixel_container .skye_pixel {
-  opacity: 0;
+header .title_image_container .skye_pixel_container .skye_pixel_group {
+  opacity: 1;
   display: none;
 }
 
@@ -446,8 +446,8 @@ header .underlines .line_one {
   -webkit-animation-name: fadeInLineOne;
           animation-name: fadeInLineOne;
   width: 100%;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 header .underlines .line_two {
@@ -456,8 +456,8 @@ header .underlines .line_two {
           animation-name: fadeInLineTwo;
   width: 70%;
   height: 8px;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 header .underlines .line_three {
@@ -466,14 +466,11 @@ header .underlines .line_three {
           animation-name: fadeInLineThree;
   width: 80%;
   height: 10px;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
-header .navigation_container .nav_item_1,
-header .navigation_container .nav_item_2,
-header .navigation_container .nav_item_3,
-header .navigation_container .nav_item_4 {
+header .navigation_container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,6 +489,7 @@ header .navigation_container .nav_item_4 {
   padding: 10px 0;
   margin: 25px 0;
   color: white;
+  text-decoration: none;
   background-color: black;
   border: solid 3px #F30093;
   border-radius: 10px;
@@ -505,10 +503,7 @@ header .navigation_container .nav_item_4 {
           animation: rotateIn 1s forwards;
 }
 
-header .navigation_container .nav_item_1:hover,
-header .navigation_container .nav_item_2:hover,
-header .navigation_container .nav_item_3:hover,
-header .navigation_container .nav_item_4:hover {
+header .navigation_container a:hover {
   border-color: #1FF4EE;
 }
 
@@ -531,6 +526,11 @@ header .navigation_container .nav_item_3 {
 header .navigation_container .nav_item_4 {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
+}
+
+header .navigation_container .nav_item_5 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 body {
@@ -772,6 +772,152 @@ body .skill_container .skill_width_container .skill_item_container .skill_item .
   padding: 0;
 }
 
+body .projects_container {
+  width: calc(100vw - 18px);
+  margin: 0 auto;
+}
+
+body .projects_container .projects_width_container {
+  padding: 0 20px;
+}
+
+body .projects_container .projects_width_container .projects_header_container {
+  text-align: center;
+}
+
+body .projects_container .projects_width_container .projects_header_container h2 {
+  color: white;
+  font-size: 5rem;
+}
+
+body .projects_container .projects_width_container .projects_item_container .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  margin-bottom: 50px;
+  --border_offset: 50px;
+  text-align: center;
+}
+
+body .projects_container .projects_width_container .projects_item_container .project .project_title {
+  font-size: 3rem;
+  z-index: 1;
+  background-color: black;
+  border-top-right-radius: var(--border_offset);
+}
+
+body .projects_container .projects_width_container .projects_item_container .project .project_visual {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+  background-color: black;
+}
+
+body .projects_container .projects_width_container .projects_item_container .project .project_visual img {
+  text-align: center;
+  margin: 0 auto;
+  height: 50vw;
+}
+
+body .projects_container .projects_width_container .projects_item_container .project .project_annotation {
+  font-size: 2rem;
+  background-color: black;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+body .projects_container .projects_width_container .projects_item_container .project .project_link {
+  z-index: 1;
+  background-color: black;
+  padding-bottom: 20px;
+  border-bottom-left-radius: var(--border_offset);
+}
+
+body .projects_container .projects_width_container .projects_item_container .project .project_link a {
+  text-decoration: none;
+  line-height: 6rem;
+  font-size: 2rem;
+  padding: 10px;
+  background-color: #F30093;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body .projects_container .projects_width_container .projects_item_container .project .project_link a:hover {
+  background-color: #fa52b7;
+}
+
+body .projects_container .projects_width_container .projects_item_container .project .top_left_border {
+  position: absolute;
+  background-color: #1FF4EE;
+  top: 0;
+  left: 0;
+  right: var(--border_offset);
+  bottom: var(--border_offset);
+}
+
+body .projects_container .projects_width_container .projects_item_container .project .bottom_right_border {
+  position: absolute;
+  background-color: #F30093;
+  top: var(--border_offset);
+  left: var(--border_offset);
+  right: 0;
+  bottom: 0;
+}
+
+body .projects_container .projects_width_container .projects_item_container .typing_effect_project .project_visual p {
+  display: none;
+  padding: 0 20px;
+  font-size: 20px;
+  color: #22c222;
+  font-size: 2rem;
+}
+
+body .projects_container .projects_width_container .projects_item_container .typing_effect_project .project_visual p:first-of-type {
+  display: block;
+}
+
+body .projects_container .projects_width_container .projects_item_container .typing_effect_project .project_visual #demo_button {
+  background-color: green;
+}
+
+body .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container {
+  width: 80vw;
+  height: 100vw;
+  overflow: auto;
+}
+
+body .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container img {
+  width: 100%;
+  height: auto;
+}
+
+body .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #small_view,
+body .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #medium_view,
+body .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #desktop_view {
+  display: none;
+}
+
+body .projects_container .projects_width_container .projects_item_container .collaboration_project .project_visual img {
+  width: 100%;
+  height: auto;
+  margin: 0 20px;
+}
+
 body .hobbies_container {
   width: calc(100vw - 18px);
   margin: 0 auto;
@@ -796,6 +942,7 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
+  margin-bottom: 50px;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon {
@@ -1057,49 +1204,65 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   stroke-dasharray: 62.840511322021484;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #controller_outline {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #controller_outline {
   -webkit-animation: undrawDrawController 1s linear forwards;
           animation: undrawDrawController 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #cable_connector {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #cable_connector {
   -webkit-animation: undrawDrawCableConnector 1s linear forwards;
           animation: undrawDrawCableConnector 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #d-pad {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #d-pad {
   -webkit-animation: undrawDrawDpad 1s linear forwards;
           animation: undrawDrawDpad 1s linear forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #top_button {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #top_button {
   -webkit-animation: undrawDrawTopButton 1s linear forwards;
           animation: undrawDrawTopButton 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #left_button {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #left_button {
   -webkit-animation: undrawDrawLeftButton 1s linear forwards;
           animation: undrawDrawLeftButton 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #right_button {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #right_button {
   -webkit-animation: undrawDrawRightButton 1s linear forwards;
           animation: undrawDrawRightButton 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #bottom_button {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #bottom_button {
   -webkit-animation: undrawDrawBottomButton 1s linear forwards;
           animation: undrawDrawBottomButton 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #top_button,
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #left_button,
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #right_button,
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller:hover #bottom_button {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #top_button,
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #left_button,
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #right_button,
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .game_controller_animations #bottom_button {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+}
+
+@media (min-width: 768px) {
+  body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 993px) {
+  body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller {
+    height: 180px;
+    margin: 15px;
+  }
 }
 
 @-webkit-keyframes PopcornForm0 {
@@ -1468,7 +1631,7 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   }
 }
 
-@-webkit-keyframes PopcornFall0 {
+@-webkit-keyframes DropPopcorn {
   0% {
     -webkit-transform: translateY(-150px);
             transform: translateY(-150px);
@@ -1479,205 +1642,7 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   }
 }
 
-@keyframes PopcornFall0 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes PopcornFall1 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes PopcornFall1 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes PopcornFall2 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes PopcornFall2 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes PopcornFall3 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes PopcornFall3 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes PopcornFall4 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes PopcornFall4 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes PopcornFall5 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes PopcornFall5 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes PopcornFall6 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes PopcornFall6 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes PopcornFall7 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes PopcornFall7 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes PopcornFall8 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes PopcornFall8 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes PopcornFall9 {
-  0% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes PopcornFall9 {
+@keyframes DropPopcorn {
   0% {
     -webkit-transform: translateY(-150px);
             transform: translateY(-150px);
@@ -2109,147 +2074,744 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   stroke-dasharray: 255.42771911621094;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations {
   overflow: visible;
-  -webkit-animation: SVGContainerHeight 4s linear forwards;
-          animation: SVGContainerHeight 4s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_0_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Popped_Corn_0_Path {
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-animation: 0.7s PopcornForm0 0.8s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall0 1.7s linear forwards;
-          animation: 0.7s PopcornForm0 0.8s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall0 1.7s linear forwards;
+  -webkit-animation: 0.7s PopcornForm0 0.8s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
+          animation: 0.7s PopcornForm0 0.8s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_1_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Popped_Corn_1_Path {
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-animation: 0.7s PopcornForm1 0.84s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall1 1.54s linear forwards;
-          animation: 0.7s PopcornForm1 0.84s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall1 1.54s linear forwards;
+  -webkit-animation: 0.7s PopcornForm1 0.84s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
+          animation: 0.7s PopcornForm1 0.84s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_2_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Popped_Corn_2_Path {
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-animation: 0.7s PopcornForm2 0.88s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall2 1.58s linear forwards;
-          animation: 0.7s PopcornForm2 0.88s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall2 1.58s linear forwards;
+  -webkit-animation: 0.7s PopcornForm2 0.88s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
+          animation: 0.7s PopcornForm2 0.88s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_3_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Popped_Corn_3_Path {
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-animation: 0.7s PopcornForm3 0.92s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall3 1.62s linear forwards;
-          animation: 0.7s PopcornForm3 0.92s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall3 1.62s linear forwards;
+  -webkit-animation: 0.7s PopcornForm3 0.92s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
+          animation: 0.7s PopcornForm3 0.92s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_4_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Popped_Corn_4_Path {
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-animation: 0.7s PopcornForm4 0.96s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall4 1.66s linear forwards;
-          animation: 0.7s PopcornForm4 0.96s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall4 1.66s linear forwards;
+  -webkit-animation: 0.7s PopcornForm4 0.96s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
+          animation: 0.7s PopcornForm4 0.96s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_5_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Popped_Corn_5_Path {
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-animation: 0.7s PopcornForm5 1s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall5 1.7s linear forwards;
-          animation: 0.7s PopcornForm5 1s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall5 1.7s linear forwards;
+  -webkit-animation: 0.7s PopcornForm5 1s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
+          animation: 0.7s PopcornForm5 1s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_6_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Popped_Corn_6_Path {
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-animation: 0.7s PopcornForm6 1.04s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall6 1.74s linear forwards;
-          animation: 0.7s PopcornForm6 1.04s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall6 1.74s linear forwards;
+  -webkit-animation: 0.7s PopcornForm6 1.04s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
+          animation: 0.7s PopcornForm6 1.04s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_7_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Popped_Corn_7_Path {
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-animation: 0.7s PopcornForm7 1.08s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall7 1.78s linear forwards;
-          animation: 0.7s PopcornForm7 1.08s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall7 1.78s linear forwards;
+  -webkit-animation: 0.7s PopcornForm7 1.08s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
+          animation: 0.7s PopcornForm7 1.08s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_8_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Popped_Corn_8_Path {
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-animation: 0.7s PopcornForm8 1.12s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall8 1.82s linear forwards;
-          animation: 0.7s PopcornForm8 1.12s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall8 1.82s linear forwards;
+  -webkit-animation: 0.7s PopcornForm8 1.12s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
+          animation: 0.7s PopcornForm8 1.12s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Popped_Corn_9_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Popped_Corn_9_Path {
   opacity: 0;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-animation: 0.7s PopcornForm9 1.16s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall9 1.86s linear forwards;
-          animation: 0.7s PopcornForm9 1.16s linear forwards, 0.5s FillPopcorn 0.8s linear forwards, 1s PopcornFall9 1.86s linear forwards;
+  -webkit-animation: 0.7s PopcornForm9 1.16s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
+          animation: 0.7s PopcornForm9 1.16s linear forwards, 0.5s FillPopcorn 0.8s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover .cls-2 {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations .cls-2 {
   -webkit-animation: PopcornDetail 1s linear forwards;
           animation: PopcornDetail 1s linear forwards;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Outline_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Box_Outline_Path {
   -webkit-animation: BoxOutline 1s linear forwards;
           animation: BoxOutline 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_1_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Box_Line_1_Path {
   -webkit-animation: BoxLine1 1s linear forwards;
           animation: BoxLine1 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_2_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Box_Line_2_Path {
   -webkit-animation: BoxLine2 1s linear forwards;
           animation: BoxLine2 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_3_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Box_Line_3_Path {
   -webkit-animation: BoxLine4 1s linear forwards;
           animation: BoxLine4 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_4_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Box_Line_4_Path {
   -webkit-animation: BoxLine4 1s linear forwards;
           animation: BoxLine4 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_5_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Box_Line_5_Path {
   -webkit-animation: BoxLine5 1s linear forwards;
           animation: BoxLine5 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Line_6_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Box_Line_6_Path {
   -webkit-animation: BoxLine6 1s linear forwards;
           animation: BoxLine6 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_Middle_Edge_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Box_Middle_Edge_Path {
   -webkit-animation: BoxEdgeOutline 1s linear forwards;
           animation: BoxEdgeOutline 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Red_Fill {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Red_Fill {
   -webkit-animation: RedFill 1s linear forwards;
           animation: RedFill 1s linear forwards;
 }
 
-body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn:hover #Box_White_Fill_Path {
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .popcorn_animations #Box_White_Fill_Path {
   -webkit-animation: BoxWhiteFill 1s linear forwards;
           animation: BoxWhiteFill 1s linear forwards;
+}
+
+@media (min-width: 768px) {
+  body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn {
+    height: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 993px) {
+  body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn {
+    height: 180px;
+  }
+}
+
+@-webkit-keyframes DrawTopLine1 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 409.7588806152344;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@keyframes DrawTopLine1 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 409.7588806152344;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@-webkit-keyframes DrawTopLine2 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 361.680419921875;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@keyframes DrawTopLine2 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 361.680419921875;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@-webkit-keyframes DrawTopLine3 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 500.38623046875;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@keyframes DrawTopLine3 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 500.38623046875;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@-webkit-keyframes DrawTopLine4 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 541.4880981445312;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@keyframes DrawTopLine4 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 541.4880981445312;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@-webkit-keyframes DrawTopLine5 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 541.4880981445312;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@keyframes DrawTopLine5 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 541.4880981445312;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@-webkit-keyframes DrawTopLine6 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 59.14720916748047;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@keyframes DrawTopLine6 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 59.14720916748047;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@-webkit-keyframes DrawTopLine7 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 125.33423614501953;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@keyframes DrawTopLine7 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 125.33423614501953;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@-webkit-keyframes DrawTopLine8 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 321.87335205078125;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@keyframes DrawTopLine8 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 321.87335205078125;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@-webkit-keyframes DrawTopLine9 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 267.8079833984375;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@keyframes DrawTopLine9 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 267.8079833984375;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #1FF4EE;
+  }
+}
+
+@-webkit-keyframes DrawBottomLine2 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 297.8523254394531;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #F30093;
+  }
+}
+
+@keyframes DrawBottomLine2 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 297.8523254394531;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #F30093;
+  }
+}
+
+@-webkit-keyframes DrawBottomLine3 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 251.5287628173828;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #F30093;
+  }
+}
+
+@keyframes DrawBottomLine3 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 251.5287628173828;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #F30093;
+  }
+}
+
+@-webkit-keyframes DrawBottomLine4 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 146.489990234375;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #F30093;
+  }
+}
+
+@keyframes DrawBottomLine4 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 146.489990234375;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #F30093;
+  }
+}
+
+@-webkit-keyframes DrawBottomLine5 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 165.47552490234375;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #F30093;
+  }
+}
+
+@keyframes DrawBottomLine5 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 165.47552490234375;
+    stroke: white;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #F30093;
+  }
+}
+
+@-webkit-keyframes DrawCircles {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes DrawCircles {
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines {
+    -webkit-transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg);
+    margin: 0 -8px;
+  }
+}
+
+@media (min-width: 768px) {
+  body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines {
+    margin-top: -20px;
+    margin-bottom: -22px;
+  }
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines .cls-1 {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 10px;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Top_1_Line {
+  stroke-dasharray: 409.7588806152344;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Top_2_Line {
+  stroke-dasharray: 361.680419921875;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Top_3_Line {
+  stroke-dasharray: 500.38623046875;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Top_4_Line {
+  stroke-dasharray: 541.4880981445312;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Top_5_Line {
+  stroke-dasharray: 541.4880981445312;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Top_6_Line {
+  stroke-dasharray: 59.14720916748047;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Top_7_Line {
+  stroke-dasharray: 125.33423614501953;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Top_8_Line {
+  stroke-dasharray: 321.87335205078125;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Top_9_Line {
+  stroke-dasharray: 267.8079833984375;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Bottom_2_Line {
+  stroke-dasharray: 297.8523254394531;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Bottom_3_Line {
+  stroke-dasharray: 251.5287628173828;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Bottom_4_Line {
+  stroke-dasharray: 146.489990234375;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #tech_lines #Bottom_5_Line {
+  stroke-dasharray: 165.47552490234375;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_1_Line {
+  -webkit-animation: 4s DrawTopLine1 0s linear forwards;
+          animation: 4s DrawTopLine1 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_1_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
+          animation: 0.5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_2_Line {
+  -webkit-animation: 4s DrawTopLine2 0s linear forwards;
+          animation: 4s DrawTopLine2 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_2_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
+          animation: 0.5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_3_Line {
+  -webkit-animation: 4s DrawTopLine3 0s linear forwards;
+          animation: 4s DrawTopLine3 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_3_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
+          animation: 0.5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_4_Line {
+  -webkit-animation: 4s DrawTopLine4 0s linear forwards;
+          animation: 4s DrawTopLine4 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_4_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
+          animation: 0.5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_5_Line {
+  -webkit-animation: 4s DrawTopLine5 0s linear forwards;
+          animation: 4s DrawTopLine5 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_5_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
+          animation: 0.5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_6_Line {
+  -webkit-animation: 4s DrawTopLine6 0s linear forwards;
+          animation: 4s DrawTopLine6 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_6_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
+          animation: 0.5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_7_Line {
+  -webkit-animation: 4s DrawTopLine7 0s linear forwards;
+          animation: 4s DrawTopLine7 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_7_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
+          animation: 0.5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_8_Line {
+  -webkit-animation: 4s DrawTopLine8 0s linear forwards;
+          animation: 4s DrawTopLine8 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_8_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
+          animation: 0.5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_9_Line {
+  -webkit-animation: 4s DrawTopLine9 0s linear forwards;
+          animation: 4s DrawTopLine9 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_9_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
+          animation: 0.5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_2_Line {
+  -webkit-animation: 4s DrawBottomLine2 0s linear forwards;
+          animation: 4s DrawBottomLine2 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_2_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: .5s DrawCircles 4s linear forwards;
+          animation: .5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_3_Line {
+  -webkit-animation: 4s DrawBottomLine3 0s linear forwards;
+          animation: 4s DrawBottomLine3 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_3_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: .5s DrawCircles 4s linear forwards;
+          animation: .5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_4_Line {
+  -webkit-animation: 4s DrawBottomLine4 0s linear forwards;
+          animation: 4s DrawBottomLine4 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_4_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: .5s DrawCircles 4s linear forwards;
+          animation: .5s DrawCircles 4s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_5_Line {
+  -webkit-animation: 4s DrawBottomLine5 0s linear forwards;
+          animation: 4s DrawBottomLine5 0s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_5_Circle {
+  stroke: white;
+  opacity: 0;
+  -webkit-animation: .5s DrawCircles 4s linear forwards;
+          animation: .5s DrawCircles 4s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
@@ -2292,6 +2854,10 @@ html {
 a, p, h1, h2, h3, h4, h5, h6 {
   color: white;
   text-transform: lowercase;
+}
+
+a, p {
+  font-size: 1.6rem;
 }
 
 .header_underline {
@@ -2488,6 +3054,111 @@ a, p, h1, h2, h3, h4, h5, h6 {
         -ms-flex-order: -2;
             order: -2;
   }
+  main .projects_container .projects_width_container {
+    width: 750px;
+    margin: 0 auto;
+  }
+  main .projects_container .projects_width_container .projects_item_container .typing_effect_project .project_visual {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .projects_container .projects_width_container .projects_item_container .typing_effect_project .project_visual .mobile_typing,
+  main .projects_container .projects_width_container .projects_item_container .typing_effect_project .project_visual .normal_demo {
+    display: block;
+  }
+  main .projects_container .projects_width_container .projects_item_container .typing_effect_project .project_visual #demo_button {
+    margin: 0 auto;
+    display: inline-block;
+    width: 20vw;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #1FF4EE;
+    color: black;
+    border: solid 3px white;
+  }
+  main .projects_container .projects_width_container .projects_item_container .typing_effect_project .project_visual #demo_button:hover {
+    color: white;
+    background-color: #1fb5c0;
+  }
+  main .projects_container .projects_width_container .projects_item_container .maze_project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main .projects_container .projects_width_container .projects_item_container .maze_project .project_title {
+    width: 100%;
+  }
+  main .projects_container .projects_width_container .projects_item_container .maze_project .project_visual {
+    width: 50%;
+    background: black;
+  }
+  main .projects_container .projects_width_container .projects_item_container .maze_project .project_visual img {
+    width: 300px;
+    height: auto;
+  }
+  main .projects_container .projects_width_container .projects_item_container .maze_project .project_annotation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+  }
+  main .projects_container .projects_width_container .projects_item_container .maze_project .project_link {
+    padding-top: 20px;
+    width: 100%;
+  }
+  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container {
+    width: 100%;
+    height: 50vh;
+    margin: 0 50px;
+  }
+  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #mobile_view {
+    display: none;
+  }
+  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #small_view {
+    display: block;
+  }
+  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container img {
+    width: 100%;
+  }
+  main .hobbies_container .hobbies_width_container {
+    width: 750px;
+    margin: 0 auto;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon {
+    width: 40%;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+  }
 }
 
 @media (min-width: 993px) {
@@ -2547,16 +3218,139 @@ a, p, h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     display: block;
   }
-  header .title_image_container .printing_container .skye_pixel_container .skye_pixel {
+  header .title_image_container .printing_container .skye_pixel_container .skye_pixel_group {
+    position: relative;
+    height: 800px;
     display: block;
     z-index: 45;
     opacity: 1;
     margin-top: 800px;
-    max-height: 800px;
-    width: 700px;
     overflow: hidden;
     -webkit-animation: printSkye 3s linear forwards;
             animation: printSkye 3s linear forwards;
+  }
+  header .title_image_container .printing_container .skye_pixel_container .skye_pixel_group img {
+    position: absolute;
+    top: 0;
+    max-height: 800px;
+    width: 700px;
+    opacity: 0;
+  }
+  @-webkit-keyframes SkyeRedAnimation {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes SkyeRedAnimation {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes SkyeBlueAnimation {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes SkyeBlueAnimation {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes SkyeMagentaAnimation {
+    0% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.86;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes SkyeMagentaAnimation {
+    0% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.86;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes SkyeLightAnimation {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0.86;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes SkyeLightAnimation {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0.86;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  header .title_image_container .printing_container .skye_pixel_container .skye_pixel_group .skye_pixel {
+    opacity: 0.5;
+  }
+  header .title_image_container .printing_container .skye_pixel_container .skye_pixel_group .skye_red {
+    opacity: 0.5;
+    z-index: 100;
+    -webkit-animation: 6s SkyeRedAnimation linear infinite;
+            animation: 6s SkyeRedAnimation linear infinite;
+  }
+  header .title_image_container .printing_container .skye_pixel_container .skye_pixel_group .skye_blue {
+    z-index: 99;
+    -webkit-animation: 5s SkyeBlueAnimation linear infinite;
+            animation: 5s SkyeBlueAnimation linear infinite;
+  }
+  header .title_image_container .printing_container .skye_pixel_container .skye_pixel_group .skye_magenta {
+    -webkit-animation: 3s SkyeMagentaAnimation linear infinite;
+            animation: 3s SkyeMagentaAnimation linear infinite;
+  }
+  header .title_image_container .printing_container .skye_pixel_container .skye_pixel_group .skye_light_tones {
+    -webkit-animation: 20s SkyeLightAnimation linear infinite;
+            animation: 20s SkyeLightAnimation linear infinite;
   }
   header .underlines {
     margin-top: 50px;
@@ -2596,6 +3390,28 @@ a, p, h1, h2, h3, h4, h5, h6 {
   main .skill_container .skill_width_container .skill_item_container .skill_item .skill_text {
     width: 70%;
   }
+  main .projects_container .projects_width_container {
+    width: 975px;
+  }
+  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container {
+    width: 100%;
+    height: 50vh;
+  }
+  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #small_view {
+    display: none;
+  }
+  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #medium_view {
+    display: block;
+  }
+  main .hobbies_container .hobbies_width_container {
+    width: 975px;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon {
+    width: 30%;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
+    width: 70%;
+  }
 }
 
 @media (min-width: 1218px) {
@@ -2619,34 +3435,52 @@ a, p, h1, h2, h3, h4, h5, h6 {
     width: 500px;
     top: 425px;
   }
-  body main .about_me_container {
+  main .about_me_container {
     width: 1200px;
   }
-  body main .about_me_container .about_content {
+  main .about_me_container .about_content {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body main .about_me_container .about_content .about_me_image {
+  main .about_me_container .about_content .about_me_image {
     width: 300px;
     height: 300px;
   }
-  body main .about_me_container .about_content .about_me_image .image_content img {
+  main .about_me_container .about_content .about_me_image .image_content img {
     height: 260px;
   }
-  body main .about_me_container .about_content .wasd {
+  main .about_me_container .about_content .wasd {
     display: none;
   }
-  body main .about_me_container .about_content .about_me_info {
+  main .about_me_container .about_content .about_me_info {
     width: 850px;
   }
-  body main .about_me_container .about_content .about_me_info .text_container {
+  main .about_me_container .about_content .about_me_info .text_container {
     width: 850px;
   }
-  body main .skill_container .skill_width_container {
+  main .skill_container .skill_width_container {
     width: 1200px;
+  }
+  main .projects_container .projects_width_container {
+    width: 1200px;
+  }
+  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #medium {
+    display: none;
+  }
+  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #desktop_view {
+    display: block;
+  }
+  main .hobbies_container .hobbies_width_container {
+    width: 1200px;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon {
+    width: 20%;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=index.css.map */

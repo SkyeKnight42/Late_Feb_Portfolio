@@ -29,34 +29,51 @@
         stroke-width: 3px;
         stroke-dasharray: 62.840511322021484;
     }
-    &:hover {
-        #controller_outline {
-            animation: undrawDrawController 1s linear forwards;
-        }
-        #cable_connector {
-            animation: undrawDrawCableConnector 1s linear forwards;
-        }
-        #d-pad {
-            animation: undrawDrawDpad 1s linear forwards;
-            animation-delay: 1s;
-        }
-        #top_button {
-            animation: undrawDrawTopButton 1s linear forwards;
-        }
-        #left_button {
-            animation: undrawDrawLeftButton 1s linear forwards;
-        }
-        #right_button {
-            animation: undrawDrawRightButton 1s linear forwards;
-        }
-        #bottom_button {
-            animation: undrawDrawBottomButton 1s linear forwards;
-        }
-        #top_button,
-        #left_button,
-        #right_button,
-        #bottom_button {
-            animation-delay: 1s;
-        }
+}
+
+.game_controller_animations {
+    #controller_outline {
+        animation: undrawDrawController 1s linear forwards;
+    }
+    #cable_connector {
+        animation: undrawDrawCableConnector 1s linear forwards;
+    }
+    #d-pad {
+        animation: undrawDrawDpad 1s linear forwards;
+        animation-delay: 1s;
+    }
+    #top_button {
+        animation: undrawDrawTopButton 1s linear forwards;
+    }
+    #left_button {
+        animation: undrawDrawLeftButton 1s linear forwards;
+    }
+    #right_button {
+        animation: undrawDrawRightButton 1s linear forwards;
+    }
+    #bottom_button {
+        animation: undrawDrawBottomButton 1s linear forwards;
+    }
+    #top_button,
+    #left_button,
+    #right_button,
+    #bottom_button {
+        animation-delay: 1s;
+    }
+}
+
+@media (min-width: 768px ) {
+    #game_controller {
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 993px ) {
+    #game_controller {
+        height: 180px;
+        margin: 15px;
     }
 }

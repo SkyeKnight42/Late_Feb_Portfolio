@@ -1,0 +1,51 @@
+
+@keyframes SkyeRedAnimation {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes SkyeBlueAnimation {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes SkyeMagentaAnimation {
+    0% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0.86;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes SkyeLightAnimation {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0.86;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -51,8 +51,8 @@ header {
         }
 
         .skye_pixel_container {
-            .skye_pixel {
-                opacity: 0;
+            .skye_pixel_group {
+                opacity: 1;
                 display: none;
                 // width: auto;
             }
@@ -94,29 +94,26 @@ header {
             background-color: $underline_pink_1;
             animation-name: fadeInLineOne;
             width: 100%;
-            animation-delay: 1s;
+            animation-delay: 0.5s;
         }
         .line_two {
             background-color: $underline_pink_2;
             animation-name: fadeInLineTwo;
             width: 70%; 
             height: 8px;
-            animation-delay: 2s;
+            animation-delay: 1s;
         }
         .line_three {
             background-color: $underline_pink_3;
             animation-name: fadeInLineThree;
             width: 80%;    
             height: 10px;
-            animation-delay: 3s;
+            animation-delay: 1.5s;
         }
     }
 
     .navigation_container {
-        .nav_item_1,
-        .nav_item_2,
-        .nav_item_3,
-        .nav_item_4 {
+        a {
 
             display: flex;
             justify-content: center;
@@ -130,6 +127,7 @@ header {
             padding: 10px 0;
             margin: 25px 0;
             color: white;
+            text-decoration: none;
             background-color: black;
             border: solid 3px $neon_pink;
             border-radius: 10px;
@@ -159,6 +157,9 @@ header {
         .nav_item_4 {
             animation-delay: 2.5s;
 
+        }
+        .nav_item_5 {
+            animation-delay: 3s;
         }
     }
 }
@@ -368,6 +369,152 @@ body {
         }
     }
 
+    .projects_container {
+        width: calc(100vw - 18px);
+        margin: 0 auto;
+
+        .projects_width_container {
+            padding: 0 20px;
+
+            .projects_header_container {
+                text-align: center;
+                h2 {
+                    color: white;
+                    font-size: 5rem;
+                }
+            }
+            .projects_item_container {
+
+                .project {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    justify-content: center;
+                    padding: 10px;
+                    margin-bottom: 50px;
+                    --border_offset: 50px;
+                    text-align: center;
+
+                    .project_title {
+                        font-size: 3rem;
+                        z-index: 1;
+                        background-color: black;    
+                        border-top-right-radius: var(--border_offset);
+                    }
+                    .project_visual {
+                        z-index: 1;
+                        display: flex;
+                        justify-content: center; 
+                        padding-top: 10px;    
+                        background-color: black;    
+
+                        img {
+                            text-align: center;
+                            margin: 0 auto;
+                            height: 50vw;
+                        }
+                    }
+                    .project_annotation {             
+                        font-size: 2rem;
+                        background-color: black;
+                        padding: 0 20px;
+                        z-index: 1;
+                    }
+                    .project_link {
+                        z-index: 1;
+                        background-color: black;
+                        padding-bottom: 20px;
+                        border-bottom-left-radius: var(--border_offset);
+
+                        a {
+                            text-decoration: none;
+                            line-height: 6rem;
+                            font-size: 2rem;
+                            padding: 10px;
+                            background-color: $neon_pink;
+                            border-radius: 5px;
+                            font-weight: bold;
+
+                            &:hover {
+                                background-color: $neon_light_pink;
+                            }
+                        }
+                    }
+                    .top_left_border {
+                        position: absolute;
+                        background-color: $neon_blue;
+                        top: 0;
+                        left: 0;
+                        right: var(--border_offset);
+                        bottom: var(--border_offset);
+                    }
+                    .bottom_right_border {
+                        position: absolute;
+                        background-color: $neon_pink;
+                        top: var(--border_offset);
+                        left: var(--border_offset);
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+                .typing_effect_project {
+
+                    .project_visual {
+                        p {
+                            display: none;
+                            padding: 0 20px;
+                            font-size: 20px;
+                            color: rgb(34, 194, 34);
+                            font-size: 2rem;
+                        }
+                        p:first-of-type {
+                            display:block;
+                        }
+                        #demo_button {
+                            background-color: green;
+                            
+                        }
+                    }
+                }
+
+                .php_project {
+
+                    .project_visual {
+                        
+                        .image_container {
+                            width: 80vw;
+                            height: 100vw;
+                            overflow: auto;
+
+                            img {
+                                // border: solid 3px white;
+                                width: 100%;
+                                height: auto;
+                            }
+
+                            #small_view,
+                            #medium_view,
+                            #desktop_view {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .collaboration_project {
+
+                    .project_visual {
+                        img {
+                            width: 100%;
+                            height: auto;
+                            margin: 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .hobbies_container {
         width: calc(100vw - 18px);
         margin: 0 auto;
@@ -384,6 +531,8 @@ body {
                     position: relative;
                     justify-content: center;
                     padding: 10px;
+                    margin-bottom: 50px;
+                    // border-radius: 50px;
 
                     .hobbie_icon {
                         --icon_border_color: white;
@@ -393,6 +542,7 @@ body {
                         
                         @import "Hobbies_Icon_Styles/_game_controller.scss";
                         @import "Hobbies_Icon_Styles/_popcorn.scss";
+                        @import "Hobbies_Icon_Styles/_tech_lines.scss";
                     }
                     .hobbie_text {
                         z-index: 1;

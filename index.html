@@ -26,7 +26,15 @@
                 </div>
                 <div class="printing_container">
                     <div class="skye_pixel_container">
-                        <img class="skye_pixel" src="Images/Skye_Blue_Pink_Pixel_3.png">
+                        <div class="skye_pixel_group">
+                            <img class="skye_blue" src="Images/Skye_Layers/Skye_Blue.png">
+                            <img class="skye_magenta" src="Images/Skye_Layers/Skye_Magenta.png">
+                            <img class="skye_light_tones" src="Images/Skye_Layers/Skye_Light_Tones.png">
+                            <img class="skye_midtones" src="Images/Skye_Layers/Skye_Midtones.png">
+                            <img class="skye_shadows" src="Images/Skye_Layers/Skye_Shadows.png">
+                            <img class="skye_red" src="Images/Skye_Layers/Skye_Red.png">
+                            <img class="skye_pixel" src="Images/Skye_Blue_Pink_Pixel_3.png">
+                        </div>
                     </div>
                     <div class="printer">
                         <div class="printing_bar"></div>
@@ -40,16 +48,17 @@
                 <span class="line_three"></span>
             </div>
             <div class="navigation_container">
-                <a class="nav_item_1">About Me</a>
-                <a class="nav_item_2">Skills</a>
-                <a class="nav_item_3">Hobbies</a>
-                <a class="nav_item_4">Contact Me</a>
+                <a class="nav_item_1" href="#about_header">About Me</a>
+                <a class="nav_item_2" href="#skills_header">Skills</a>
+                <a class="nav_item_3" href="#project_header">Projects</a>
+                <a class="nav_item_4" href="#hobbies_header">Hobbies</a>
+                <a class="nav_item_5" href="#about_header">Contact Me</a>
             </div>
         </header>
         <main>
             <div class="about_me_container">
                 <div class="about_header_container">
-                    <h2 class="about_header header_underline">About Me</h2>
+                    <h2 class="about_header header_underline" id="about_header">About Me</h2>
                 </div>
                 <div class="about_content">
                     <div class="about_me_image">
@@ -85,7 +94,7 @@
             <div class="skill_container">
                 <div class="skill_width_container">
                     <div class="skill_header_container">
-                        <h2 class="header_underline">skills</h2>
+                        <h2 class="header_underline" id="skills_header">skills</h2>
                     </div>
                     <div class="skill_item_container">
                         <div class="skill_item">
@@ -94,7 +103,7 @@
                                 <div class="top_right_arrow"></div>
                                 <div class="bottom_left_arrow"></div>
                                 <div class="bottom_right_arrow"></div>
-                                <img src="Images/Cropped_HTML.png" alt="HTML Logo">
+                                <img src="Images/Skills/Cropped_HTML.png" alt="HTML Logo">
                             </div>
                             <div class="skill_title">
                                 <h3>HTML</h3>
@@ -111,7 +120,7 @@
                                 <div class="top_right_arrow"></div>
                                 <div class="bottom_left_arrow"></div>
                                 <div class="bottom_right_arrow"></div>
-                                <img src="Images/Sass_Logo.png" alt="Sass Logo">
+                                <img src="Images/Skills/Sass_Logo.png" alt="Sass Logo">
                             </div>
                             <div class="skill_title">
                                 <h3>SCSS</h3>
@@ -128,7 +137,7 @@
                                 <div class="top_right_arrow"></div>
                                 <div class="bottom_left_arrow"></div>
                                 <div class="bottom_right_arrow"></div>
-                                <img src="Images/JavaScript_2.png" alt="JavaScript Logo">
+                                <img src="Images/Skills/JavaScript_2.png" alt="JavaScript Logo">
                             </div>
                             <div class="skill_title">
                                 <h3>Java<br>Script</h3>
@@ -145,7 +154,7 @@
                                 <div class="top_right_arrow"></div>
                                 <div class="bottom_left_arrow"></div>
                                 <div class="bottom_right_arrow"></div>
-                                <img src="Images/C_Sharp_Logo.png" alt="C Sharp Logo">
+                                <img src="Images/Skills/C_Sharp_Logo.png" alt="C Sharp Logo">
                             </div>
                             <div class="skill_title">
                                 <h3>C&num;</h3>
@@ -162,10 +171,10 @@
                                 <div class="top_right_arrow"></div>
                                 <div class="bottom_left_arrow"></div>
                                 <div class="bottom_right_arrow"></div>
-                                <img src="Images/Adobe_Logo.png" alt="Adobe Logo">
+                                <img src="Images/Skills/Adobe_Logo.png" alt="Adobe Logo">
                             </div>
                             <div class="skill_title">
-                                <h3>Adobe<br>Suite</h3>
+                                <h3>Adobe Suite</h3>
                             </div>
                             <div class="skill_text">
                                 <p>Adobe skills in Photoshop and Illustrator for design, art, photo editing, UVW Map texturing, and asset creation.</p>
@@ -176,10 +185,95 @@
                     </div>
                 </div>
             </div>
+            <div class="projects_container">
+                <div class="projects_width_container">
+                    <div class="projects_header_container">
+                        <h2 class="header_underline" id="project_header">Projects</h2>
+                    </div>
+                    <div class="projects_item_container">
+                        <div class="project maze_project">
+                            <div class="project_title">
+                                <h4>University Dissertation</h4>
+                            </div>
+                            <div class="project_visual">
+                                <img src="Images/Projects/Maze.png" alt="Generated Maze">
+                            </div>
+                            <div class="project_annotation">
+                                <p>A dissertation into procedural maze generation using Prims and Recursive Backtracking to generate mazes, solving them, and then combining the algorithms together.</p>
+                            </div>
+                            <div class="project_link">
+                                <a href="" target="_blank">GitHub Link</a>
+                            </div>
+                            <div class="top_left_border"></div>
+                            <div class="bottom_right_border"></div>
+                        </div>
+                        <div class="project typing_effect_project">
+                            <div class="project_title">
+                                <h4>JavaScript Typing Effect</h4>
+                            </div>
+                            <div class="project_visual" id="demo_typing_container">
+                                <p id="mobile_typing">Watch this text by typed out using the plugin!</p>
+                                <p class="normal_demo">Watch this text by typed out using the plugin, with a normal effect!</p>
+                                <p class="normal_demo">Watch this text by typed out using the plugin, with a dash effect!</p>
+                                <p class="normal_demo">Watch this text by typed out using the plugin, with a blinking cursor effect!</p>
+                                <p id="demo_button">DEMO</p>
+                            </div>
+                            <div class="project_annotation">
+                                <p>A vanilla JavaScript script, which can type out text content in various methods, and with various speeds.</p>                           
+                                </div>
+                            <div class="project_link">
+                                <a href="" target="_blank">GitHub Link</a>
+                            </div>
+                            <div class="top_left_border"></div>
+                            <div class="bottom_right_border"></div>
+                        </div>
+                        <div class="project php_project">
+                            <div class="project_title">
+                                <h4>Netmatters Homepage Project</h4>
+                            </div>
+                            <div class="project_visual">
+                                <div class="image_container">
+                                    <img id="mobile_view" src="Images/Projects/PHP_Reflection_Task_Mobile.png" alt="Netmatters Homepage">
+                                    <img id="small_view" src="Images/Projects/PHP_Reflection_Task_768.png" alt="Netmatters Homepage">
+                                    <img id="medium_view" src="Images/Projects/PHP_Reflection_Task_993.png" alt="Netmatters Homepage">
+                                    <img id="desktop_view" src="Images/Projects/PHP_Reflection_Task.png" alt="Netmatters Homepage">
+                                </div>
+                            </div>
+                            <div class="project_annotation">
+                                <p>The Netmatters homepage, and contact us page recreated from scatch with HTML, CSS, SCSS, JavaScript, and PHP.
+                                    The website is fully responsive, and pulls the news items down from an Xampp server, and sends the infomation
+                                    from the contact us page to the database.
+                                </p>                           
+                                </div>
+                            <div class="project_link">
+                                <a href="" target="_blank">GitHub Link</a>
+                            </div>
+                            <div class="top_left_border"></div>
+                            <div class="bottom_right_border"></div>
+                        </div>
+                        <div class="project collaboration_project">
+                            <div class="project_title">
+                                <h4>Collaboration Project</h4>
+                            </div>
+                            <div class="project_visual">
+                                <img src="Images/Projects/Collaboration_Header.png" alt="TerraCotta Catering Website">
+                            </div>
+                            <div class="project_annotation">
+                                <p>A collaboration piece created between myself and another junior developer. The project has us make a adaptive website, with numberous pages and a JavaScript validated contact form.</p>
+                            </div>
+                            <div class="project_link">
+                                <a href="" target="_blank">GitHub Link</a>
+                            </div>
+                            <div class="top_left_border"></div>
+                            <div class="bottom_right_border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="hobbies_container">
                 <div class="hobbies_width_container">
                     <div class="hobbies_header_container">
-                        <h2 class="header_underline">hobbies</h2>
+                        <h2 class="header_underline" id="hobbies_header">hobbies</h2>
                     </div>
                     <div class="hobbies_item_container">
                         <div class="hobbie_item">
@@ -202,6 +296,7 @@
                                 <p>I have a huge love of video games ranging from RPG's to indie titles.
                                     I also have a huge passion for games design and trying to replicate mechanics myself in Unity Game Engine.
                                 </p>
+    
                             </div>
                             <div class="top_left_border"></div>
                             <div class="bottom_right_border"></div>
@@ -236,12 +331,83 @@
                                             <line id="Box_Middle_Edge_Path" class="cls-5" x1="237.51" y1="191.96" x2="218.38" y2="464.37"/>
                                         </g>
                                         <g id="Box_Lines">
-                                             <line id="Box_Line_1_Path" class="cls-5" x1="50.85" y1="180.85" x2="60.83" y2="464.58"/>
+                                                <line id="Box_Line_1_Path" class="cls-5" x1="50.85" y1="180.85" x2="60.83" y2="464.58"/>
                                             <line id="Box_Line_2_Path" class="cls-5" x1="98.25" y1="174.79" x2="97.89" y2="465.64"/>
                                             <line id="Box_Line_3_Path" class="cls-5" x1="144.23" y1="175.15" x2="144.94" y2="463.86"/>
                                             <line id="Box_Line_4_Path" class="cls-5" x1="194.13" y1="182.28" x2="184.51" y2="463.51"/>
                                             <line id="Box_Line_5_Path" class="cls-5" x1="267.56" y1="178" x2="247.24" y2="442.12"/>
                                             <line id="Box_Line_6_Path" class="cls-5" x1="296.79" y1="160.89" x2="275.04" y2="415.39"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="hobbie_text">
+                                <p>I have a huge love of video games ranging from RPG's to indie titles.
+                                    I also have a huge passion for games design and trying to replicate mechanics myself in Unity Game Engine.
+                                </p>
+                            </div>
+                            <div class="top_left_border"></div>
+                            <div class="bottom_right_border"></div>
+                        </div>
+                        <div class="hobbie_item">
+                            <div class="hobbie_icon">
+                                <svg id="tech_lines" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 478.39 500">
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <!-- <g id="Bottom_1">
+                                            <polyline id="Bottom_1_Line" class="cls-1" points="5 500 5 138.22 55.97 87.25 55.97 61.23"/>
+                                            <circle id="Bottom_1_Circle" class="cls-1" cx="54.54" cy="45.91" r="15"/>
+                                        </g> -->
+                                        <g id="Top_1">
+                                            <polyline id="Top_1_Line" class="cls-1" points="100.55 0 100.55 115.87 36.4 180.03 36.4 383.19"/>
+                                            <circle id="Top_1_Circle" class="cls-1" cx="36.04" cy="402.08" r="15"/>
+                                        </g>
+                                        <g id="Top_2">
+                                            <polyline id="Top_2_Line" class="cls-1" points="127.64 0 127.64 128.7 65.98 190.36 65.98 336.14"/>
+                                            <circle id="Top_2_Circle" class="cls-1" cx="65.98" cy="349.33" r="15"/>
+                                        </g>
+                                        <g id="Bottom_2">
+                                            <polyline id="Bottom_2_Line" class="cls-1" points="93.22 500 93.22 365.46 138.13 320.55 138.13 220.75"/>
+                                            <circle id="Bottom_2_Circle" class="cls-1" cx="138.84" cy="202.19" r="15"/>
+                                        </g>
+                                        <g id="Bottom_3">
+                                            <polyline id="Bottom_3_Line" class="cls-1" points="123.34 500 123.34 397 170.39 349.95 170.39 267.96"/>
+                                            <circle id="Bottom_3_Circle" class="cls-1" cx="170.03" cy="256.2" r="15"/>
+                                        </g>
+                                        <g id="Top_3">
+                                            <polyline id="Top_3_Line" class="cls-1" points="155.07 0 155.07 156.14 235.99 237.05 235.99 402.08 190.18 447.89"/>
+                                            <circle id="Top_3_Circle" class="cls-1" cx="179.67" cy="460.18" r="15"/>
+                                        </g>
+                                        <g id="Top_4">
+                                            <polyline id="Top_4_Line" class="cls-1" points="179.3 0 179.3 126.13 277.32 224.15 277.32 359.24 322.41 404.33 400.29 404.33"/>
+                                            <circle id="Top_4_Circle" class="cls-1" cx="416.33" cy="404.65" r="15"/>
+                                        </g>
+                                        <g id="Top_5">
+                                            <polyline id="Top_5_Line" class="cls-1" points="225.63 0 225.63 110.89 329 214.26 329 348.28 344.33 363.6 376.76 363.6 418.64 321.72 439.5 321.72"/>
+                                            <circle id="Top_5_Circle" class="cls-1" cx="458.39" cy="322.26" r="15"/>
+                                        </g>
+                                        <g id="Top_6">
+                                            <polyline id="Top_6_Line" class="cls-1" points="255.93 0 255.93 34.95 273.04 52.06"/>
+                                            <circle id="Top_6_Circle" class="cls-1" cx="284.09" cy="63.11" r="15"/>
+                                        </g>
+                                        <g id="Top_7">
+                                            <polyline id="Top_7_Line" class="cls-1" points="344.71 0 344.71 69.89 305.5 109.09"/>
+                                            <circle id="Top_7_Circle" class="cls-1" cx="293.74" cy="120.14" r="15"/>
+                                        </g>
+                                        <g id="Top_8">
+                                            <polyline id="Top_8_Line" class="cls-1" points="402.1 0 402.1 190 362.54 229.57 362.54 305.49"/>
+                                            <circle id="Top_8_Circle" class="cls-1" cx="363.25" cy="321.53" r="15"/>
+                                        </g>
+                                        <g id="Top_9">
+                                            <polyline id="Top_9_Line" class="cls-1" points="458.42 0 458.42 171.83 426.34 203.91 426.34 254.52"/>
+                                            <circle id="Top_9_Circle" class="cls-1" cx="426.69" cy="270.56" r="15"/>
+                                        </g>
+                                        <g id="Bottom_4">
+                                            <polyline id="Bottom_4_Line" class="cls-1" points="392.12 500 392.12 474.7 270.93 474.7"/>
+                                            <circle id="Bottom_4_Circle" class="cls-1" cx="256.32" cy="474.34" r="15"/>
+                                        </g>
+                                        <g id="Bottom_5">
+                                            <polyline id="Bottom_5_Line" class="cls-1" points="431.13 500 431.13 460.9 406.54 436.31 314.94 436.31"/>
+                                            <circle id="Bottom_5_Circle" class="cls-1" cx="298.9" cy="435.59" r="15"/>
                                         </g>
                                     </g>
                                 </svg>
@@ -261,8 +427,9 @@
         <footer>
 
         </footer>
-        <!-- <script type="text/JavaScript" src="JavaScript/JavaScript_Typing_Effect-master/typing_effect.js"></script> -->
-        <!-- <script type="text/JavaScript" src="JavaScript/type_out_headers.js"></script> -->
-        <script type="text/JavaScript" src="JavaScript/get_Line_Length.js"></script>
+        <script type="text/JavaScript" src="JavaScript/JavaScript_Typing_Effect/typing_effect.js"></script>
+        <!-- <script type="text/JavaScript" src="JavaScript/get_Line_Length.js"></script> -->
+        <script type="text/JavaScript" src="JavaScript/play_svg_animations.js"></script>
+        <script type="text/JavaScript" src="JavaScript/demo_typing_effect.js"></script>
     </body>
 </html>

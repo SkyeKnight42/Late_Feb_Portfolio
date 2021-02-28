@@ -1,0 +1,203 @@
+
+
+@keyframes DrawTopLine1 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 409.7588806152344;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_blue;
+    }
+}
+
+@keyframes DrawTopLine2 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 361.680419921875;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_blue;
+    }
+}
+
+@keyframes DrawTopLine3 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 500.38623046875;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_blue;
+    }
+}
+
+@keyframes DrawTopLine4 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 541.4880981445312;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_blue;
+    }
+}
+
+@keyframes DrawTopLine5 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 541.4880981445312;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_blue;
+    }
+}
+
+@keyframes DrawTopLine6 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 59.14720916748047;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_blue;
+    }
+}
+
+@keyframes DrawTopLine7 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 125.33423614501953;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_blue;
+    }
+}
+
+@keyframes DrawTopLine8 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 321.87335205078125;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_blue;
+    }
+}
+
+@keyframes DrawTopLine9 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 267.8079833984375;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_blue;
+    }
+}
+
+// @keyframes DrawBottomLine1 {
+//     0% {
+//         stroke-dashoffset: 0;
+//     }
+//     50% {
+//         stroke-dashoffset: 459.8824462890625;
+//         stroke: white;
+//     }
+//     100% {
+//         stroke-dashoffset: 0;
+//         stroke: $neon_pink;
+//     }
+// }
+
+@keyframes DrawBottomLine2 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 297.8523254394531;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_pink;
+    }
+}
+
+@keyframes DrawBottomLine3 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 251.5287628173828;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_pink;
+    }
+}
+
+@keyframes DrawBottomLine4 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 146.489990234375;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_pink;
+    }
+}
+
+@keyframes DrawBottomLine5 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 165.47552490234375;
+        stroke: white;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: $neon_pink;
+    }
+}
+
+@keyframes DrawCircles {
+    100% {
+        opacity: 1;
+    }
+}

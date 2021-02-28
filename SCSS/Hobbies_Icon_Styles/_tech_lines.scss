@@ -1,0 +1,98 @@
+@import "../Keyframes/_tech_lines_svg.scss";
+@import "./_tech_lines_values.scss";
+
+#tech_lines {
+
+    @media (max-width: 768px) {
+        transform: rotateZ(-90deg);
+        margin: 0 -8px;
+    }
+
+    
+
+    @media (min-width: 768px) {
+        margin-top: -20px;
+        margin-bottom: -22px;
+    }
+    @media (min-width: 993px) {
+    }
+    @media (min-width: 1218px) {
+
+    }
+    // border: solid 1px white;
+
+
+    .cls-1{
+        fill:none;
+        stroke:white;
+        stroke-miterlimit:10;
+        stroke-width:10px;
+    }
+
+    #Top_1_Line {
+        stroke-dasharray: 409.7588806152344;
+    }
+    #Top_2_Line {
+        stroke-dasharray: 361.680419921875;
+    }
+    #Top_3_Line {
+        stroke-dasharray: 500.38623046875;
+    }
+    #Top_4_Line {
+        stroke-dasharray: 541.4880981445312;
+    }
+    #Top_5_Line {
+        stroke-dasharray: 541.4880981445312;
+    }
+    #Top_6_Line {
+        stroke-dasharray: 59.14720916748047;
+    }
+    #Top_7_Line {
+        stroke-dasharray: 125.33423614501953;
+    }
+    #Top_8_Line {
+        stroke-dasharray: 321.87335205078125;
+    }
+    #Top_9_Line {
+        stroke-dasharray: 267.8079833984375;
+    }
+    // #Bottom_1_Line {
+    //     stroke-dasharray: 459.8824462890625;
+    // }
+    #Bottom_2_Line {
+        stroke-dasharray: 297.8523254394531;
+    }
+    #Bottom_3_Line {
+        stroke-dasharray: 251.5287628173828;
+    }
+    #Bottom_4_Line {
+        stroke-dasharray: 146.489990234375;
+    }
+    #Bottom_5_Line {
+        stroke-dasharray: 165.47552490234375;
+    }
+
+}
+
+.tech_lines_animations {
+    @each $delay, $duration, $number in $top_tech_lines {
+        #Top_#{$number}_Line {
+            animation: #{$duration}s DrawTopLine#{$number} #{$delay}s linear forwards;
+        }
+        #Top_#{$number}_Circle {
+            stroke: white;
+            opacity: 0;
+            animation: .5s DrawCircles #{$duration}s linear forwards;
+        }
+    }
+    @each $delay, $duration, $number in $bottom_tech_lines {
+        #Bottom_#{$number}_Line {
+            animation: #{$duration}s DrawBottomLine#{$number} #{$delay}s linear forwards;
+        }
+        #Bottom_#{$number}_Circle {
+            stroke: white;
+            opacity: 0;
+            animation: .5s DrawCircles 4s linear forwards;
+        }
+    }
+}
