@@ -5,9 +5,15 @@ let normalTyping = document.getElementsByClassName("normal_demo")
 
 let demoButton = document.getElementById("demo_button")
 
+window.addEventListener("scroll", function() {
+        if (isInViewport(mobileTyping)) {
+                TypeOutText(mobileTyping, 50, "typing", null)
+        }
+})
+
 demoButton.addEventListener("click", function() {
         TypeOutText(mobileTyping, 50, "typing", null)
-        TypeOutText(normalTyping[0], 50, "typing", null)
-        TypeOutText(normalTyping[1], 50, "dash", "!")
-        TypeOutText(normalTyping[2], 50, "blink", "#")
+        TypeOutText(normalTyping[0], 75, "typing", null)
+        TypeOutText(normalTyping[1], 100, "dash", "!")
+        TypeOutText(normalTyping[2], 125, "blink", "#")
 })
