@@ -92,7 +92,7 @@
         #Bottom_#{$number}_Circle {
             stroke: white;
             opacity: 0;
-            animation: .5s DrawCircles 4s linear forwards;
+            animation: .5s DrawCircles #{$duration}s linear forwards;
         }
     }
 }

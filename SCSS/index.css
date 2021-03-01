@@ -330,6 +330,46 @@
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+  color: white;
+  text-transform: lowercase;
+}
+
+a, p {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-decoration: none;
+}
+
+.header_underline {
+  display: inline-block;
+  width: auto;
+  color: white;
+  font-family: 'Major Mono Display', sans-serif;
+  font-size: 5rem;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.header_underline::after {
+  content: "";
+  display: block;
+  background-color: #F30093;
+  width: 120%;
+  margin-left: -10%;
+  border-radius: 5px;
+  height: 10px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -340,7 +380,6 @@ body {
 header {
   padding: 20px 20px 0;
   overflow: hidden;
-  margin-bottom: 30px;
 }
 
 header .title_image_container .header_box {
@@ -396,6 +435,10 @@ header .title_image_container .skye_pixel_container .skye_pixel_group {
   display: none;
 }
 
+header .title_image_container .skye_pixel_container .skye_pixel_group .skye_pixel {
+  opacity: 1;
+}
+
 header .slide_in_left {
   -webkit-animation-name: slideInFromLeft;
           animation-name: slideInFromLeft;
@@ -422,7 +465,6 @@ header .underlines {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
-  margin-bottom: 30px;
   height: 70px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -468,6 +510,10 @@ header .underlines .line_three {
   height: 10px;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
+}
+
+header .navigation_container {
+  margin: 20px 0;
 }
 
 header .navigation_container a {
@@ -815,10 +861,13 @@ body .projects_container .projects_width_container .projects_item_container .pro
   text-align: center;
 }
 
-body .projects_container .projects_width_container .projects_item_container .project .project_title {
-  font-size: 3rem;
-  z-index: 1;
+body .projects_container .projects_width_container .projects_item_container .project > * {
   background-color: black;
+}
+
+body .projects_container .projects_width_container .projects_item_container .project .project_title {
+  font-size: 3.5rem;
+  z-index: 1;
   border-top-right-radius: var(--border_offset);
   padding: 0 20px;
 }
@@ -832,7 +881,6 @@ body .projects_container .projects_width_container .projects_item_container .pro
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 20px 0;
-  background-color: black;
 }
 
 body .projects_container .projects_width_container .projects_item_container .project .project_visual img {
@@ -843,14 +891,12 @@ body .projects_container .projects_width_container .projects_item_container .pro
 
 body .projects_container .projects_width_container .projects_item_container .project .project_annotation {
   font-size: 2rem;
-  background-color: black;
-  padding: 0 20px;
+  padding: 0 40px;
   z-index: 1;
 }
 
 body .projects_container .projects_width_container .projects_item_container .project .project_link {
   z-index: 1;
-  background-color: black;
   padding-bottom: 20px;
   border-bottom-left-radius: var(--border_offset);
 }
@@ -905,7 +951,7 @@ body .projects_container .projects_width_container .projects_item_container .typ
 
 body .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container {
   width: 100%;
-  height: 100vw;
+  height: 50vh;
   overflow: auto;
 }
 
@@ -918,6 +964,10 @@ body .projects_container .projects_width_container .projects_item_container .php
 body .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #medium_view,
 body .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #desktop_view {
   display: none;
+}
+
+body .projects_container .projects_width_container .projects_item_container .php_project .project_visual .landscape {
+  height: 50vw;
 }
 
 body .projects_container .projects_width_container .projects_item_container .collaboration_project .project_visual img {
@@ -946,11 +996,12 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 10px;
   margin-bottom: 50px;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item > * {
+  background-color: black;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon {
@@ -2782,8 +2833,8 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_2_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: .5s DrawCircles 4s linear forwards;
-          animation: .5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_3_Line {
@@ -2794,8 +2845,8 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_3_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: .5s DrawCircles 4s linear forwards;
-          animation: .5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_4_Line {
@@ -2806,8 +2857,8 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_4_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: .5s DrawCircles 4s linear forwards;
-          animation: .5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_5_Line {
@@ -2818,14 +2869,26 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_5_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: .5s DrawCircles 4s linear forwards;
-          animation: .5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
+}
+
+body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item h4 {
+  z-index: 1;
+  margin: none;
+  padding: none;
+  font-size: 5rem;
+  text-transform: lowercase;
+  line-height: 5rem;
+  padding: 20px 0;
+  margin: 0;
+  border-top-right-radius: var(--border_offset);
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
   z-index: 1;
-  background-color: black;
   padding: 0 20px;
+  border-bottom-left-radius: var(--border_offset);
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text p {
@@ -2964,46 +3027,6 @@ footer .footer_width_container .footer_links_container {
 
 footer .footer_width_container .footer_links_container a {
   margin-bottom: 20px;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-a, p, h1, h2, h3, h4, h5, h6 {
-  color: white;
-  text-transform: lowercase;
-}
-
-a, p {
-  font-size: 2rem;
-  line-height: 2rem;
-  text-decoration: none;
-}
-
-.header_underline {
-  display: inline-block;
-  width: auto;
-  color: white;
-  font-family: 'Major Mono Display', sans-serif;
-  font-size: 5rem;
-  text-transform: lowercase;
-  text-align: center;
-}
-
-.header_underline::after {
-  content: "";
-  display: block;
-  background-color: #F30093;
-  width: 120%;
-  margin-left: -10%;
-  border-radius: 5px;
-  height: 10px;
 }
 
 @media (min-width: 768px) {
@@ -3268,22 +3291,31 @@ a, p {
     margin: 0 auto;
   }
   main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item h4 {
+    border-top-right-radius: 0;
   }
   main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon {
-    width: 40%;
+    border-top-right-radius: var(--border_offset);
+    width: 100%;
+    height: 300px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon svg {
+    height: 300px;
+    width: 300px;
   }
   main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 60%;
+    padding: 0 20px;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text p {
+    width: 100%;
   }
   main .contact_container .contact_width_container {
     width: 750px;
@@ -3512,6 +3544,9 @@ a, p {
   header .underlines {
     margin-top: 50px;
   }
+  header .navigation_container {
+    width: 925px;
+  }
   main .about_me_container {
     width: 975px;
   }
@@ -3548,11 +3583,6 @@ a, p {
     margin: 0;
     width: 70%;
   }
-  main .skill_container .skill_width_container .skill_item_container .reverse .skill_icon {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: +1;
-            order: +1;
-  }
   main .projects_container .projects_width_container {
     width: 975px;
   }
@@ -3569,11 +3599,12 @@ a, p {
   main .hobbies_container .hobbies_width_container {
     width: 975px;
   }
-  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon {
-    width: 30%;
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn,
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller {
+    height: 100%;
   }
-  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
-    width: 70%;
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller {
+    margin: 0;
   }
   main .contact_container .contact_width_container {
     width: 975px;
@@ -3663,11 +3694,16 @@ a, p {
   main .hobbies_container .hobbies_width_container {
     width: 1200px;
   }
-  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon {
-    width: 20%;
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #popcorn,
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller {
+    height: 100%;
+  }
+  main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon #game_controller {
+    margin: 0;
   }
   main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
-    width: 80%;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   main .contact_container .contact_width_container {
     width: 1200px;

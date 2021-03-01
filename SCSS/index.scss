@@ -1,5 +1,7 @@
 @import "_colors.scss";
 @import "_keyframes.scss";
+@import "_universal_styles.scss";
+
 
 body {
     margin: 0;
@@ -11,7 +13,6 @@ body {
 header {
     padding: 20px 20px 0;
     overflow: hidden;
-    margin-bottom: 30px;
 
 
     .title_image_container {
@@ -55,6 +56,10 @@ header {
                 opacity: 1;
                 display: none;
                 // width: auto;
+
+                .skye_pixel {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -74,7 +79,6 @@ header {
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
-        margin-bottom: 30px;
         height: 70px;
         justify-content: space-between;
 
@@ -113,6 +117,7 @@ header {
     }
 
     .navigation_container {
+        margin: 20px 0;
         a {
 
             display: flex;
@@ -401,10 +406,13 @@ body {
                     --border_offset: 50px;
                     text-align: center;
 
+                    & > * {
+                        background-color: black;
+                    }
+                    
                     .project_title {
-                        font-size: 3rem;
+                        font-size: 3.5rem;
                         z-index: 1;
-                        background-color: black;    
                         border-top-right-radius: var(--border_offset);
                         padding: 0 20px;
                     }
@@ -412,9 +420,7 @@ body {
                         z-index: 1;
                         display: flex;
                         justify-content: center; 
-                        // padding-top: 10px;    
                         padding: 10px 20px 0;
-                        background-color: black;    
 
                         img {
                             text-align: center;
@@ -424,13 +430,11 @@ body {
                     }
                     .project_annotation {             
                         font-size: 2rem;
-                        background-color: black;
-                        padding: 0 20px;
+                        padding: 0 40px;
                         z-index: 1;
                     }
                     .project_link {
                         z-index: 1;
-                        background-color: black;
                         padding-bottom: 20px;
                         border-bottom-left-radius: var(--border_offset);
 
@@ -465,6 +469,7 @@ body {
                         bottom: 0;
                     }
                 }
+
                 .typing_effect_project {
 
                     .project_visual {
@@ -491,7 +496,7 @@ body {
                         
                         .image_container {
                             width: 100%;
-                            height: 100vw;
+                            height: 50vh;
                             overflow: auto;
 
                             img {
@@ -505,6 +510,10 @@ body {
                             #desktop_view {
                                 display: none;
                             }
+                        }
+
+                        .landscape {
+                            height: 50vw;
                         }
                     }
                 }
@@ -537,11 +546,12 @@ body {
                     display: flex;
                     flex-direction: column;
                     position: relative;
-                    justify-content: center;
                     padding: 10px;
                     margin-bottom: 50px;
-                    // border-radius: 50px;
 
+                    & > * {
+                        background-color: black;
+                    }
                     .hobbie_icon {
                         --icon_border_color: white;
                         z-index: 1;
@@ -551,15 +561,32 @@ body {
                         @import "Hobbies_Icon_Styles/_game_controller.scss";
                         @import "Hobbies_Icon_Styles/_popcorn.scss";
                         @import "Hobbies_Icon_Styles/_tech_lines.scss";
+
                     }
+
+                    h4 {
+                        z-index: 1;
+                        margin: none;
+                        padding: none;
+                        font-size: 5rem;
+                        text-transform: lowercase;
+                        line-height: 5rem;
+                        padding: 20px 0;
+                        margin: 0;
+                        border-top-right-radius: var(--border_offset);
+                    }
+
                     .hobbie_text {
                         z-index: 1;
-                        background-color: black;
                         padding: 0 20px;
+                        border-bottom-left-radius: var(--border_offset);
+
                         p {
                             font-size: 2rem;
                         }
                     }
+                    
+
                     .top_left_border {
                         position: absolute;
                         background-color: $neon_blue;
@@ -684,5 +711,4 @@ footer {
     }
 }
 
-@import "_universal_styles.scss";
 @import "_media.scss";
