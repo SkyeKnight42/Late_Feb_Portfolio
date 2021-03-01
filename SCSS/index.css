@@ -704,10 +704,16 @@ body .skill_container .skill_width_container .skill_item_container .skill_item .
 body .skill_container .skill_width_container .skill_item_container .skill_item .skill_icon img {
   display: block;
   max-width: 100%;
-  height: 100%;
   max-height: 100%;
   padding: 10px;
   margin: 0 auto;
+}
+
+body .skill_container .skill_width_container .skill_item_container .skill_item .skill_icon .top_left_arrow,
+body .skill_container .skill_width_container .skill_item_container .skill_item .skill_icon .top_right_arrow,
+body .skill_container .skill_width_container .skill_item_container .skill_item .skill_icon .bottom_left_arrow,
+body .skill_container .skill_width_container .skill_item_container .skill_item .skill_icon .bottom_right_arrow {
+  display: none;
 }
 
 body .skill_container .skill_width_container .skill_item_container .skill_item .skill_icon .top_left_arrow {
@@ -751,6 +757,7 @@ body .skill_container .skill_width_container .skill_item_container .skill_item .
   padding: 0;
   font-size: 5rem;
   letter-spacing: 3px;
+  margin: 10px 0;
 }
 
 body .skill_container .skill_width_container .skill_item_container .skill_item .skill_title h3::after {
@@ -813,6 +820,7 @@ body .projects_container .projects_width_container .projects_item_container .pro
   z-index: 1;
   background-color: black;
   border-top-right-radius: var(--border_offset);
+  padding: 0 20px;
 }
 
 body .projects_container .projects_width_container .projects_item_container .project .project_visual {
@@ -823,7 +831,7 @@ body .projects_container .projects_width_container .projects_item_container .pro
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10px;
+  padding: 10px 20px 0;
   background-color: black;
 }
 
@@ -896,7 +904,7 @@ body .projects_container .projects_width_container .projects_item_container .typ
 }
 
 body .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container {
-  width: 80vw;
+  width: 100%;
   height: 100vw;
   overflow: auto;
 }
@@ -2659,116 +2667,116 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_1_Line {
-  -webkit-animation: 4s DrawTopLine1 0s linear forwards;
-          animation: 4s DrawTopLine1 0s linear forwards;
+  -webkit-animation: 2s DrawTopLine1 0s linear forwards;
+          animation: 2s DrawTopLine1 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_1_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
-          animation: 0.5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_2_Line {
-  -webkit-animation: 4s DrawTopLine2 0s linear forwards;
-          animation: 4s DrawTopLine2 0s linear forwards;
+  -webkit-animation: 2s DrawTopLine2 0s linear forwards;
+          animation: 2s DrawTopLine2 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_2_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
-          animation: 0.5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_3_Line {
-  -webkit-animation: 4s DrawTopLine3 0s linear forwards;
-          animation: 4s DrawTopLine3 0s linear forwards;
+  -webkit-animation: 2s DrawTopLine3 0s linear forwards;
+          animation: 2s DrawTopLine3 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_3_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
-          animation: 0.5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_4_Line {
-  -webkit-animation: 4s DrawTopLine4 0s linear forwards;
-          animation: 4s DrawTopLine4 0s linear forwards;
+  -webkit-animation: 2s DrawTopLine4 0s linear forwards;
+          animation: 2s DrawTopLine4 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_4_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
-          animation: 0.5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_5_Line {
-  -webkit-animation: 4s DrawTopLine5 0s linear forwards;
-          animation: 4s DrawTopLine5 0s linear forwards;
+  -webkit-animation: 2s DrawTopLine5 0s linear forwards;
+          animation: 2s DrawTopLine5 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_5_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
-          animation: 0.5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_6_Line {
-  -webkit-animation: 4s DrawTopLine6 0s linear forwards;
-          animation: 4s DrawTopLine6 0s linear forwards;
+  -webkit-animation: 2s DrawTopLine6 0s linear forwards;
+          animation: 2s DrawTopLine6 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_6_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
-          animation: 0.5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_7_Line {
-  -webkit-animation: 4s DrawTopLine7 0s linear forwards;
-          animation: 4s DrawTopLine7 0s linear forwards;
+  -webkit-animation: 2s DrawTopLine7 0s linear forwards;
+          animation: 2s DrawTopLine7 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_7_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
-          animation: 0.5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_8_Line {
-  -webkit-animation: 4s DrawTopLine8 0s linear forwards;
-          animation: 4s DrawTopLine8 0s linear forwards;
+  -webkit-animation: 2s DrawTopLine8 0s linear forwards;
+          animation: 2s DrawTopLine8 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_8_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
-          animation: 0.5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_9_Line {
-  -webkit-animation: 4s DrawTopLine9 0s linear forwards;
-          animation: 4s DrawTopLine9 0s linear forwards;
+  -webkit-animation: 2s DrawTopLine9 0s linear forwards;
+          animation: 2s DrawTopLine9 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Top_9_Circle {
   stroke: white;
   opacity: 0;
-  -webkit-animation: 0.5s DrawCircles 4s linear forwards;
-          animation: 0.5s DrawCircles 4s linear forwards;
+  -webkit-animation: 0.5s DrawCircles 2s linear forwards;
+          animation: 0.5s DrawCircles 2s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_2_Line {
-  -webkit-animation: 4s DrawBottomLine2 0s linear forwards;
-          animation: 4s DrawBottomLine2 0s linear forwards;
+  -webkit-animation: 2s DrawBottomLine2 0s linear forwards;
+          animation: 2s DrawBottomLine2 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_2_Circle {
@@ -2779,8 +2787,8 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_3_Line {
-  -webkit-animation: 4s DrawBottomLine3 0s linear forwards;
-          animation: 4s DrawBottomLine3 0s linear forwards;
+  -webkit-animation: 2s DrawBottomLine3 0s linear forwards;
+          animation: 2s DrawBottomLine3 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_3_Circle {
@@ -2791,8 +2799,8 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_4_Line {
-  -webkit-animation: 4s DrawBottomLine4 0s linear forwards;
-          animation: 4s DrawBottomLine4 0s linear forwards;
+  -webkit-animation: 2s DrawBottomLine4 0s linear forwards;
+          animation: 2s DrawBottomLine4 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_4_Circle {
@@ -2803,8 +2811,8 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_5_Line {
-  -webkit-animation: 4s DrawBottomLine5 0s linear forwards;
-          animation: 4s DrawBottomLine5 0s linear forwards;
+  -webkit-animation: 2s DrawBottomLine5 0s linear forwards;
+          animation: 2s DrawBottomLine5 0s linear forwards;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon .tech_lines_animations #Bottom_5_Circle {
@@ -2842,6 +2850,122 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   bottom: 0;
 }
 
+body .contact_container {
+  width: calc(100vw - 18px);
+  margin: 0 auto;
+}
+
+body .contact_container .contact_width_container {
+  padding: 0 20px;
+  text-align: center;
+}
+
+body .contact_container .contact_width_container .contact_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  --border_offset: 50px;
+  padding: 10px;
+}
+
+body .contact_container .contact_width_container .contact_content .contact_header_container {
+  border-top-right-radius: 50px;
+  background-color: black;
+  z-index: 50;
+}
+
+body .contact_container .contact_width_container .contact_content .contact_header_container .header_underline::after {
+  width: 100%;
+  margin-left: 0;
+}
+
+body .contact_container .contact_width_container .contact_content .details_container {
+  z-index: 50;
+  border-bottom-left-radius: 50px;
+  background-color: black;
+}
+
+body .contact_container .contact_width_container .contact_content .details_container .block {
+  margin-bottom: 30px;
+}
+
+body .contact_container .contact_width_container .contact_content .details_container .block a:hover {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+body .contact_container .contact_width_container .contact_content .details_container .block .twitter_link:hover {
+  background-color: #1DA1F2;
+}
+
+body .contact_container .contact_width_container .contact_content .details_container .block .instagram_link:hover {
+  background-color: #8a3ab9;
+}
+
+body .contact_container .contact_width_container .contact_content .top_left_border {
+  position: absolute;
+  background-color: #1FF4EE;
+  top: 0;
+  left: 0;
+  right: var(--border_offset);
+  bottom: var(--border_offset);
+}
+
+body .contact_container .contact_width_container .contact_content .bottom_right_border {
+  position: absolute;
+  background-color: #F30093;
+  top: var(--border_offset);
+  left: var(--border_offset);
+  right: 0;
+  bottom: 0;
+}
+
+footer {
+  margin-top: 50px;
+  width: calc(100vw - 18px);
+}
+
+footer .footer_width_container {
+  padding: 0 20px;
+  text-align: center;
+}
+
+footer .footer_width_container a {
+  background-color: black;
+  padding: 10px 20px;
+  border: solid 3px #F30093;
+  border-radius: 5px;
+  font-size: 2.4rem;
+}
+
+footer .footer_width_container a:hover {
+  border-color: #1FF4EE;
+}
+
+footer .footer_width_container .footer_links_container {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer_width_container .footer_links_container a {
+  margin-bottom: 20px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2857,7 +2981,9 @@ a, p, h1, h2, h3, h4, h5, h6 {
 }
 
 a, p {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-decoration: none;
 }
 
 .header_underline {
@@ -3002,7 +3128,7 @@ a, p {
   main .skill_container .skill_width_container .skill_item_container .skill_item .skill_icon {
     --arrow_size: 30px;
     width: 20%;
-    height: 20%;
+    height: auto;
   }
   main .skill_container .skill_width_container .skill_item_container .skill_item .skill_title {
     width: 80%;
@@ -3021,15 +3147,17 @@ a, p {
             flex-direction: row;
     position: relative;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     --border_offset: 50px;
   }
   main .skill_container .skill_width_container .skill_item_container .skill_item .skill_text p {
     display: block;
     z-index: 5;
     margin: 10px;
-    padding: 10px;
+    padding: 30px;
     background-color: black;
+    border-top-right-radius: var(--border_offset);
+    border-bottom-left-radius: var(--border_offset);
   }
   main .skill_container .skill_width_container .skill_item_container .skill_item .skill_text div {
     position: absolute;
@@ -3124,9 +3252,7 @@ a, p {
     width: 100%;
   }
   main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container {
-    width: 100%;
     height: 50vh;
-    margin: 0 50px;
   }
   main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #mobile_view {
     display: none;
@@ -3158,6 +3284,37 @@ a, p {
         -ms-flex-align: center;
             align-items: center;
     width: 60%;
+  }
+  main .contact_container .contact_width_container {
+    width: 750px;
+    margin: 0 auto;
+  }
+  footer {
+    margin-bottom: 50px;
+  }
+  footer .footer_width_container {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .footer_width_container .footer_links_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 40px;
+  }
+  footer .footer_width_container .footer_links_container a {
+    width: auto;
+    margin: 0 20px;
   }
 }
 
@@ -3388,7 +3545,13 @@ a, p {
     width: 100%;
   }
   main .skill_container .skill_width_container .skill_item_container .skill_item .skill_text {
+    margin: 0;
     width: 70%;
+  }
+  main .skill_container .skill_width_container .skill_item_container .reverse .skill_icon {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: +1;
+            order: +1;
   }
   main .projects_container .projects_width_container {
     width: 975px;
@@ -3411,6 +3574,30 @@ a, p {
   }
   main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
     width: 70%;
+  }
+  main .contact_container .contact_width_container {
+    width: 975px;
+  }
+  main .contact_container .contact_width_container .contact_content .details_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-bottom: 20px;
+  }
+  main .contact_container .contact_width_container .contact_content .details_container .block {
+    width: 40%;
+  }
+  footer .footer_width_container {
+    width: 975px;
   }
 }
 
@@ -3467,7 +3654,7 @@ a, p {
   main .projects_container .projects_width_container {
     width: 1200px;
   }
-  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #medium {
+  main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #medium_view {
     display: none;
   }
   main .projects_container .projects_width_container .projects_item_container .php_project .project_visual .image_container #desktop_view {
@@ -3481,6 +3668,12 @@ a, p {
   }
   main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
     width: 80%;
+  }
+  main .contact_container .contact_width_container {
+    width: 1200px;
+  }
+  footer .footer_width_container {
+    width: 1200px;
   }
 }
 /*# sourceMappingURL=index.css.map */

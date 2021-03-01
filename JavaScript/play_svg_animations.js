@@ -14,6 +14,25 @@ function isInViewport(element) {
     )
 }
 
+document.addEventListener("resize", function() {
+    if (isInViewport(gameContorllerSVG)) {
+        gameContorllerSVG.classList.add("game_controller_animations")
+    } else {
+        gameContorllerSVG.classList.remove("game_controller_animations")
+    }
+
+    if (isInViewport(popcornSVG)) {
+        popcornSVG.classList.add("popcorn_animations")
+    } else {
+        popcornSVG.classList.remove("popcorn_animations")
+    }
+
+    if (isInViewport(techLinesSVG)) {
+        techLinesSVG.classList.add("tech_lines_animations")
+    } else {
+        techLinesSVG.classList.remove("tech_lines_animations")
+    }
+})
 document.addEventListener("scroll", function() {
     if (isInViewport(gameContorllerSVG)) {
         gameContorllerSVG.classList.add("game_controller_animations")
