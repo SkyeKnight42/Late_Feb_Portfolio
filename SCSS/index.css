@@ -596,7 +596,6 @@ body .about_me_container .about_header_container {
 body .about_me_container .about_content .about_me_image {
   width: 100%;
   padding: 0 20px;
-  --border_offset: 30px;
   margin-bottom: 30px;
 }
 
@@ -615,8 +614,8 @@ body .about_me_container .about_content .about_me_image .image_content img {
   width: 100%;
   z-index: 10;
   padding: 10px;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
 body .about_me_container .about_content .about_me_image .image_content div {
@@ -628,14 +627,14 @@ body .about_me_container .about_content .about_me_image .image_content .top_left
   background-color: #1FF4EE;
   top: 0;
   left: 0;
-  right: var(--border_offset);
-  bottom: var(--border_offset);
+  right: 50px;
+  bottom: 50px;
 }
 
 body .about_me_container .about_content .about_me_image .image_content .bottom_right_border {
   background-color: #F30093;
-  top: var(--border_offset);
-  left: var(--border_offset);
+  top: 50px;
+  left: 50px;
   right: 0;
   bottom: 0;
 }
@@ -647,7 +646,6 @@ body .about_me_container .about_content .wasd {
 body .about_me_container .about_content .about_me_info {
   width: 100%;
   padding: 0 20px;
-  --border_offset: 30px;
 }
 
 body .about_me_container .about_content .about_me_info .text_container {
@@ -677,6 +675,8 @@ body .about_me_container .about_content .about_me_info .text_container p {
   font-family: 'Major Mono Display', sans-serif;
   text-transform: lowercase;
   background-color: black;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 
 body .about_me_container .about_content .about_me_info .text_container div {
@@ -688,14 +688,14 @@ body .about_me_container .about_content .about_me_info .text_container .top_left
   background-color: #1FF4EE;
   top: 0;
   left: 0;
-  right: var(--border_offset);
-  bottom: var(--border_offset);
+  right: 50px;
+  bottom: 50px;
 }
 
 body .about_me_container .about_content .about_me_info .text_container .bottom_right_border {
   background-color: #F30093;
-  top: var(--border_offset);
-  left: var(--border_offset);
+  top: 50px;
+  left: 50px;
   right: 0;
   bottom: 0;
 }
@@ -819,10 +819,49 @@ body .skill_container .skill_width_container .skill_item_container .skill_item .
 }
 
 body .skill_container .skill_width_container .skill_item_container .skill_item .skill_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
   text-align: center;
   width: 100%;
   font-size: 2rem;
   padding: 0;
+  margin-top: 15px;
+}
+
+body .skill_container .skill_width_container .skill_item_container .skill_item .skill_text p {
+  background-color: black;
+  padding: 20px;
+  z-index: 1;
+  margin: 10px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+body .skill_container .skill_width_container .skill_item_container .skill_item .skill_text div {
+  position: absolute;
+  display: block;
+}
+
+body .skill_container .skill_width_container .skill_item_container .skill_item .skill_text .top_left_border {
+  background-color: #1FF4EE;
+  top: 0;
+  left: 0;
+  right: 50px;
+  bottom: 50px;
+}
+
+body .skill_container .skill_width_container .skill_item_container .skill_item .skill_text .bottom_right_border {
+  background-color: #F30093;
+  top: 50px;
+  left: 50px;
+  right: 0;
+  bottom: 0;
 }
 
 body .projects_container {
@@ -868,7 +907,7 @@ body .projects_container .projects_width_container .projects_item_container .pro
 body .projects_container .projects_width_container .projects_item_container .project .project_title {
   font-size: 3.5rem;
   z-index: 1;
-  border-top-right-radius: var(--border_offset);
+  border-top-right-radius: 40px;
   padding: 0 20px;
 }
 
@@ -898,7 +937,7 @@ body .projects_container .projects_width_container .projects_item_container .pro
 body .projects_container .projects_width_container .projects_item_container .project .project_link {
   z-index: 1;
   padding-bottom: 20px;
-  border-bottom-left-radius: var(--border_offset);
+  border-bottom-left-radius: 40px;
 }
 
 body .projects_container .projects_width_container .projects_item_container .project .project_link a {
@@ -920,15 +959,15 @@ body .projects_container .projects_width_container .projects_item_container .pro
   background-color: #1FF4EE;
   top: 0;
   left: 0;
-  right: var(--border_offset);
-  bottom: var(--border_offset);
+  right: 50px;
+  bottom: 50px;
 }
 
 body .projects_container .projects_width_container .projects_item_container .project .bottom_right_border {
   position: absolute;
   background-color: #F30093;
-  top: var(--border_offset);
-  left: var(--border_offset);
+  top: 50px;
+  left: 50px;
   right: 0;
   bottom: 0;
 }
@@ -2882,13 +2921,13 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   line-height: 5rem;
   padding: 40px 0 20px;
   margin: 0;
-  border-top-right-radius: var(--border_offset);
+  border-top-right-radius: 40px;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text {
   z-index: 1;
   padding: 0 20px;
-  border-bottom-left-radius: var(--border_offset);
+  border-bottom-left-radius: 40px;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_text p {
@@ -2900,15 +2939,15 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   background-color: #1FF4EE;
   top: 0;
   left: 0;
-  right: var(--border_offset);
-  bottom: var(--border_offset);
+  right: 50px;
+  bottom: 50px;
 }
 
 body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .bottom_right_border {
   position: absolute;
   background-color: #F30093;
-  top: var(--border_offset);
-  left: var(--border_offset);
+  top: 50px;
+  left: 50px;
   right: 0;
   bottom: 0;
 }
@@ -2935,12 +2974,11 @@ body .contact_container .contact_width_container .contact_content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  --border_offset: 50px;
   padding: 10px;
 }
 
 body .contact_container .contact_width_container .contact_content .contact_header_container {
-  border-top-right-radius: 50px;
+  border-top-right-radius: 40px;
   background-color: black;
   z-index: 50;
 }
@@ -2952,7 +2990,7 @@ body .contact_container .contact_width_container .contact_content .contact_heade
 
 body .contact_container .contact_width_container .contact_content .details_container {
   z-index: 50;
-  border-bottom-left-radius: 50px;
+  border-bottom-left-radius: 40px;
   background-color: black;
 }
 
@@ -2979,15 +3017,15 @@ body .contact_container .contact_width_container .contact_content .top_left_bord
   background-color: #1FF4EE;
   top: 0;
   left: 0;
-  right: var(--border_offset);
-  bottom: var(--border_offset);
+  right: 50px;
+  bottom: 50px;
 }
 
 body .contact_container .contact_width_container .contact_content .bottom_right_border {
   position: absolute;
   background-color: #F30093;
-  top: var(--border_offset);
-  left: var(--border_offset);
+  top: 50px;
+  left: 50px;
   right: 0;
   bottom: 0;
 }
@@ -3161,44 +3199,8 @@ footer .footer_width_container .footer_links_container a {
     display: none;
   }
   main .skill_container .skill_width_container .skill_item_container .skill_item .skill_text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: relative;
     width: 100%;
     margin-top: 20px;
-    --border_offset: 50px;
-  }
-  main .skill_container .skill_width_container .skill_item_container .skill_item .skill_text p {
-    display: block;
-    z-index: 5;
-    margin: 10px;
-    padding: 30px;
-    background-color: black;
-    border-top-right-radius: var(--border_offset);
-    border-bottom-left-radius: var(--border_offset);
-  }
-  main .skill_container .skill_width_container .skill_item_container .skill_item .skill_text div {
-    position: absolute;
-    display: block;
-  }
-  main .skill_container .skill_width_container .skill_item_container .skill_item .skill_text .top_left_border {
-    background-color: #1FF4EE;
-    top: 0;
-    left: 0;
-    right: var(--border_offset);
-    bottom: var(--border_offset);
-  }
-  main .skill_container .skill_width_container .skill_item_container .skill_item .skill_text .bottom_right_border {
-    background-color: #F30093;
-    top: var(--border_offset);
-    left: var(--border_offset);
-    right: 0;
-    bottom: 0;
   }
   main .skill_container .skill_width_container .skill_item_container .reverse .skill_title {
     -webkit-box-ordinal-group: -1;
@@ -3300,7 +3302,7 @@ footer .footer_width_container .footer_links_container a {
     border-top-right-radius: 0;
   }
   main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon {
-    border-top-right-radius: var(--border_offset);
+    border-top-right-radius: 40px;
     width: 100%;
     height: 300px;
     -webkit-box-ordinal-group: 0;
