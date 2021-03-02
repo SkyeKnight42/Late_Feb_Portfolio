@@ -3012,6 +3012,10 @@ body .contact_container .contact_width_container .contact_content .details_conta
   background-color: #8a3ab9;
 }
 
+body .contact_container .contact_width_container .contact_content .details_container .block .linkedin_link:hover {
+  background-color: #0E76A8;
+}
+
 body .contact_container .contact_width_container .contact_content .top_left_border {
   position: absolute;
   background-color: #1FF4EE;
