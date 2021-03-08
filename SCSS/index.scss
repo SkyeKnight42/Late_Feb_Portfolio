@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: black;
     font-family: 'Major Mono Display','Libre Franklin', sans-serif;
+    min-width: 300px;
 }
 
 header {
@@ -238,8 +239,6 @@ body {
                         padding: 30px;
                         display: block;
                         z-index: 1;
-                        font-size: 2.4rem;
-                        line-height: 3.5rem;
                         font-family: 'Major Mono Display', sans-serif;
                         text-transform: lowercase;
                         background-color: black;
@@ -277,9 +276,11 @@ body {
             padding: 0 20px;
             .skill_header_container {
                 text-align: center;
+                // overflow: hidden;
+
                 h2 {
                     color: white;
-                    font-size: 5rem;
+                    // font-size: 5rem;
                 }
             }
             .skill_item_container {
@@ -343,6 +344,7 @@ body {
                     }
                     .skill_title {
                         margin: 0 auto;
+                        // overflow: hidden;
                         h3 {
                             display: inline-block;
                             text-align: center;
@@ -350,7 +352,8 @@ body {
                             text-transform: uppercase;
                             color: white;
                             padding: 0;
-                            font-size: 5rem;
+                            // font-size: 5rem;
+                            // line-height: 5rem;
                             letter-spacing: 3px;
                             margin: 10px 0;
                             
@@ -372,7 +375,6 @@ body {
                         position: relative;
                         text-align: center;
                         width: 100%;
-                        font-size: 2rem;
                         padding: 0;  
                         margin-top: 15px; 
 
@@ -421,7 +423,7 @@ body {
                 text-align: center;
                 h2 {
                     color: white;
-                    font-size: 5rem;
+                    // font-size: 5rem;
                 }
             }
             .projects_item_container {
@@ -596,9 +598,10 @@ body {
                         z-index: 1;
                         margin: none;
                         padding: none;
-                        font-size: 5rem;
+                        // font-size: 5rem;
+                        // border: solid 1px white;
                         text-transform: lowercase;
-                        line-height: 5rem;
+                        // line-height: 5rem;
                         padding: 40px 0 20px;
                         margin: 0;
                         border-top-right-radius: $content_box_radius;
@@ -667,6 +670,10 @@ body {
                     .block {
                         margin-bottom: 30px;
 
+                        & > * {
+                            font-size: 16px;
+                        }
+
                         a:hover {
                             color: white;
                             padding: 10px 20px;
@@ -712,10 +719,12 @@ body {
 footer {
     margin-top: 50px;
     width: calc(100vw - 18px);
-
+    padding-left: 18px;
+    
     .footer_width_container {
-        padding: 0 20px;
+        padding: 20px 20px;
         text-align: center;
+
         a {
             background-color: black;
             padding: 10px 20px;

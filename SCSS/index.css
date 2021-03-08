@@ -346,8 +346,22 @@ a, p, h1, h2, h3, h4, h5, h6 {
 
 a, p {
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 2.3rem;
   text-decoration: none;
+}
+
+@media (max-width: 400px) {
+  a, p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  a, p {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
 }
 
 .header_underline {
@@ -367,7 +381,36 @@ a, p {
   width: 120%;
   margin-left: -10%;
   border-radius: 5px;
+  margin-top: 10px;
   height: 10px;
+}
+
+@media (max-width: 400px) {
+  .header_sizing_mobile {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  .header_sizing_mobile {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .header_sizing_mobile {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .header_sizing_mobile {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
 }
 
 body {
@@ -375,6 +418,7 @@ body {
   padding: 0;
   background-color: black;
   font-family: 'Major Mono Display','Libre Franklin', sans-serif;
+  min-width: 300px;
 }
 
 header {
@@ -670,8 +714,6 @@ body .about_me_container .about_content .about_me_info .text_container p {
   padding: 30px;
   display: block;
   z-index: 1;
-  font-size: 2.4rem;
-  line-height: 3.5rem;
   font-family: 'Major Mono Display', sans-serif;
   text-transform: lowercase;
   background-color: black;
@@ -715,7 +757,6 @@ body .skill_container .skill_width_container .skill_header_container {
 
 body .skill_container .skill_width_container .skill_header_container h2 {
   color: white;
-  font-size: 5rem;
 }
 
 body .skill_container .skill_width_container .skill_item_container .skill_item {
@@ -801,7 +842,6 @@ body .skill_container .skill_width_container .skill_item_container .skill_item .
   text-transform: uppercase;
   color: white;
   padding: 0;
-  font-size: 5rem;
   letter-spacing: 3px;
   margin: 10px 0;
 }
@@ -829,7 +869,6 @@ body .skill_container .skill_width_container .skill_item_container .skill_item .
   position: relative;
   text-align: center;
   width: 100%;
-  font-size: 2rem;
   padding: 0;
   margin-top: 15px;
 }
@@ -879,7 +918,6 @@ body .projects_container .projects_width_container .projects_header_container {
 
 body .projects_container .projects_width_container .projects_header_container h2 {
   color: white;
-  font-size: 5rem;
 }
 
 body .projects_container .projects_width_container .projects_item_container .project {
@@ -2916,9 +2954,7 @@ body .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie
   z-index: 1;
   margin: none;
   padding: none;
-  font-size: 5rem;
   text-transform: lowercase;
-  line-height: 5rem;
   padding: 40px 0 20px;
   margin: 0;
   border-top-right-radius: 40px;
@@ -2998,6 +3034,10 @@ body .contact_container .contact_width_container .contact_content .details_conta
   margin-bottom: 30px;
 }
 
+body .contact_container .contact_width_container .contact_content .details_container .block > * {
+  font-size: 16px;
+}
+
 body .contact_container .contact_width_container .contact_content .details_container .block a:hover {
   color: white;
   padding: 10px 20px;
@@ -3037,10 +3077,11 @@ body .contact_container .contact_width_container .contact_content .bottom_right_
 footer {
   margin-top: 50px;
   width: calc(100vw - 18px);
+  padding-left: 18px;
 }
 
 footer .footer_width_container {
-  padding: 0 20px;
+  padding: 20px 20px;
   text-align: center;
 }
 
@@ -3304,6 +3345,7 @@ footer .footer_width_container .footer_links_container a {
   }
   main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item h4 {
     border-top-right-radius: 0;
+    font-size: 5rem;
   }
   main .hobbies_container .hobbies_width_container .hobbies_item_container .hobbie_item .hobbie_icon {
     border-top-right-radius: 40px;

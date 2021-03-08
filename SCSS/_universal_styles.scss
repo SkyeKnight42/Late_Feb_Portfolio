@@ -13,8 +13,17 @@ a, p, h1, h2, h3, h4, h5, h6 {
 }
 
 a, p {
+
+    @media (max-width: 400px) {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    @media (min-width: 400px) and (max-width: 500px) {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 2.3rem;
     text-decoration: none;
 }
 
@@ -34,7 +43,27 @@ a, p {
         width: 120%;
         margin-left: -10%;
         border-radius: 5px;
+        margin-top: 10px;
         height: 10px;
+    }
+}
+
+.header_sizing_mobile {
+    @media (max-width: 400px) {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    @media (min-width: 400px) and (max-width: 500px) {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    @media (min-width: 500px) and (max-width: 600px) {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    @media (min-width: 600px) {
+        font-size: 5rem;
+        line-height: 5rem;
     }
 }
 
