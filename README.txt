@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/49e89532-f40d-48af-ba37-a568e4f4756a/deploy-status)](https://app.netlify.com/sites/distracted-morse-697a1f/deploys)
