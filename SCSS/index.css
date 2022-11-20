@@ -903,6 +903,113 @@ body .skill_container .skill_width_container .skill_item_container .skill_item .
   bottom: 0;
 }
 
+body .work_container {
+  width: calc(100vw - 18px);
+  margin: 0 auto;
+}
+
+body .work_container .work_width_container {
+  padding: 0 20px;
+}
+
+body .work_container .work_width_container .work_header_container {
+  text-align: center;
+}
+
+body .work_container .work_width_container .work_header_container h2 {
+  color: white;
+}
+
+body .work_container .work_width_container .work_item_container .work_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  margin-bottom: 50px;
+  --border_offset: 50px;
+  text-align: center;
+}
+
+body .work_container .work_width_container .work_item_container .work_item > * {
+  background-color: black;
+}
+
+body .work_container .work_width_container .work_item_container .work_item .work_title {
+  font-size: 3.5rem;
+  z-index: 1;
+  border-top-right-radius: 40px;
+  padding: 0 20px;
+}
+
+body .work_container .work_width_container .work_item_container .work_item .work_visual {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 20px 0;
+}
+
+body .work_container .work_width_container .work_item_container .work_item .work_visual img {
+  text-align: center;
+  margin: 0 auto;
+  height: 50vw;
+}
+
+body .work_container .work_width_container .work_item_container .work_item .work_annotation {
+  font-size: 2rem;
+  padding: 0 40px;
+  z-index: 1;
+}
+
+body .work_container .work_width_container .work_item_container .work_item .work_link {
+  z-index: 1;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 40px;
+}
+
+body .work_container .work_width_container .work_item_container .work_item .work_link a {
+  text-decoration: none;
+  line-height: 6rem;
+  font-size: 2rem;
+  padding: 10px;
+  background-color: #F30093;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body .work_container .work_width_container .work_item_container .work_item .work_link a:hover {
+  background-color: #fa52b7;
+}
+
+body .work_container .work_width_container .work_item_container .work_item .top_left_border {
+  position: absolute;
+  background-color: #1FF4EE;
+  top: 0;
+  left: 0;
+  right: 50px;
+  bottom: 50px;
+}
+
+body .work_container .work_width_container .work_item_container .work_item .bottom_right_border {
+  position: absolute;
+  background-color: #F30093;
+  top: 50px;
+  left: 50px;
+  right: 0;
+  bottom: 0;
+}
+
 body .projects_container {
   width: calc(100vw - 18px);
   margin: 0 auto;
